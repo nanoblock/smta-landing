@@ -1,18 +1,33 @@
 <div id="experience-desc-container" class="section">
 	<div class="container bolder-bottom">
 		<div class="row">
-			<div class="col-sm-6 col-sm-push-6" id="row-right">
-				<h1 class="text-right" id="text01">화면캡처들의 순서를 연결하여</h1>
-				<h1 class="text-right" id="text02"><strong>#실제 APP</strong>의 체험이 가능합니다.</h1>
-				<h3 class="text-right" id="text03">화면캡처에서 클릭(터치)이 가능한 부분을 설정해주세요.</h3>
-				<h3 class="text-right" id="text04">유저들의 App의 체험에 대한 만족은 App설치로 이어집니다.</h3>
-			</div>
-			<div class="col-sm-6 col-sm-pull-6" id="row-left">
+			<div class="col-sm-6" id="row-right">
 				<%= image_tag('5.png', class: "img-responsive") %>
+			</div>
+			<div class="col-sm-6" id="row-left">
+				
+				<h1 class="text-right" id="experience-text01">화면캡처들의 순서를 연결하여</h1>
+				<h1 class="text-right" id="experience-text02"><strong>#실제 APP</strong>의 체험이 가능합니다.</h1>
+				<h3 class="text-right" id="experience-text03"></h3>
+				<h3 class="text-right" id="experience-text04"></h3>
 			</div>
 		</div>
 	</div>
 </div>
+
+<script>
+  $(window).resize(function() {
+    if ($(window).width() < 768) {
+      $("#experience-text03").html("화면캡처에서 클릭(터치)이<br>가능한 부분을 설정해주세요.");
+      $("#experience-text04").html("유저들의 App의 체험에 대한 만족은<br>App설치로 이어집니다.");
+    } else {
+      $("#experience-text03").html("화면캡처에서 클릭(터치)이 가능한 부분을 설정해주세요.");
+      $("#experience-text04").html("유저들의 App의 체험에 대한 만족은 App설치로 이어집니다.");
+    }
+  });
+  
+</script>
+
 
 
 <!-- <div id="realtime-desc-wrap" class="container">

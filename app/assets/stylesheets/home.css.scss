@@ -1,4 +1,8 @@
-
+/*
+========================================
+			constant variable
+========================================
+*/
 $continer_height: 500px;
 
 $img_height: 400px;
@@ -9,34 +13,18 @@ $button_color: #0071BC;
 $container_color: rgba(0, 102, 204, 0.05);
 
 $padding_container_left: 0px;
-/*$padding_container_right: 0px;*/
-/*$padding_container_left: 140px;*/
-$padding_container_right: 75px;
+$padding_container_right: 95px;
 
-/*lg*/
-@media only screen and (min-width: 1200px) {
+$image_width: 342px;
+$image_width_768: 262px;
 
-}
+$image_height: 365px;
 
-/*md*/
-@media only screen and (max-width: 1200px) {
-
-}
-
-/*sm*/
-@media screen and (max-width : 992px) {
-	
-}
-
-/*xs*/
-@media only screen and (max-width : 768px) {
-	
-}
-/*xs */
-@media only screen and (max-width : 480px) {
-
-}
-
+/*
+========================================
+				common
+========================================
+*/
 	.container {
 		margin-right: auto;
 		margin-left: auto;
@@ -52,119 +40,760 @@ $padding_container_right: 75px;
 	.container:after {
 		clear: both; 
 	}
-		
-	@media (min-width: 768px) {
-		.container {
-			width: 750px; } 
+
+	input {
+		font: 500 12px/16px "Kopub-Light", Helvetica, Arial, sans-serif;
+		font-size: 13pt;
+		background-color: #E6E6E6;
 	}
 
-	@media (min-width: 992px) {
-		.container {
-			width: 970px; } 
+	button[type="submit"] {
+		font-family: 'Kopub-Light';
+		font-size: 19pt;
+		color: #FFF;
+		background-color: $button_color;
+		border-radius: 10px;
+		-webkit-border-radius: 10px;
+		-moz-border-radius: 10px;
+		-webkit-transition: border-color 0.3s ease-in-out;
+		-moz-transition: border-color 0.3s ease-in-out;
+		transition: border-color 0.3s ease-in-out;
+		border: 1px solid $button_color;
 	}
 
-	@media (min-width: 1200px) {
-		.container {
-			width: 1024px; 
-		}
-	} 
+	button[type="submit"]:hover {
+		background-color: #FFF;
+		color: $button_color;
+	}
+
+	button[type="submit"]:focus {
+		outline: none;
+	}
+
 	
 
-	.bolder-bottom:after {
-		display:block;
-    	clear:both;
-    	content : "";
-    	position: relative;
-    	/*max-width:250px;*/
-    	height  : 50px;
-    	margin-right: 70px;
-    	
-    	border-bottom:1px solid #E6E7E7;
+/*
+========================================
+			device setting
+========================================
+*/
+	@media screen and (max-width: 768px) {
+		.container {
+			width: 400px;
+		}
+
+		.bolder-bottom:after {
+			display:block;
+		    clear:both;
+		    content : "";
+		    position: relative;
+		    height  : 50px;
+	    	margin-right: -50px;
+	    	margin-left: -50px;
+	    	border-bottom:1px solid #E6E7E7;
+		}
+
+		#header #header-button{
+			display: none;
+		}
+
+		#main-container .container {
+			background-image:url("");
+		}
+
+		#main-container h1 {
+			text-align: center;
+		}
+
+		#main-container h3 {
+			text-align: center;
+			padding-top: 15px;
+		}
+
+		#main-container h4 {
+			text-align: center;
+			padding-top: 20px;
+		}
+		
+		#main-container input {
+			font-size: 1.875em;
+			margin-top: 15px;
+			max-width: 380px;
+			min-height: 52px;
+			padding: 10px;
+			background-color: #E6E6E6;
+		}
+
+		#header button[type="submit"] {
+			font-size: 1.25em;
+			min-width: 100px;
+			max-width: 100px;
+			height: 40px;
+		}
+
+		#main-container button[type="submit"]{
+			margin-top: -5px;
+			margin-left: 5px;
+			min-width: 360px;
+		}
+
+		#contact-container input {
+			font-size: 1.875em;
+			margin-top: 15px;
+			margin-bottom: 15px;
+			margin-left: 10px;
+			max-width: 380px;
+			min-height: 52px;
+			background-color: #E6E6E6;
+		}
+
+		#contact-container button[type="submit"]{
+			margin-left: 5px;
+			min-width: 380px;
+		}
+
+		#screenshot-desc-container h1,
+		#adver-desc-container h1,
+		#experience-desc-container h1 {
+			float: center;
+			font-size: 1.625em;
+			text-align: center;
+		}
+
+		#screenshot-desc-container h3,
+		#adver-desc-container h3,
+		#experience-desc-container h3 {
+			float: center;
+			font-size: 1.375em;
+			text-align: center;
+		}
+
+		#benefit-desc-container h1 {
+			float: center;
+			font-size: 1.625em;
+			text-align: center;
+		}
+
+		#benefit-desc-container h3 {
+			float: center;
+			font-size: 1.355em;
+			text-align: center;
+		}
+
+		#footer h1 {
+			float: center;
+			font-size: 1.75em;
+			text-align: center;
+		}
+
+		#screenshot-desc-container #screenshot-desc-container-text01 {
+			margin-top: -50px;
+		}
+		
+		#screenshot-desc-container #screenshot-desc-container-text02 {
+			margin-top: -5px;
+		}
+
+		#screenshot-desc-container #screenshot-desc-container-text03{
+			margin-top: -5px;
+		}
+
+		#screenshot-desc-container #screenshot-desc-container-text04 {
+			margin-top: 30px;
+		}
+
+		#screenshot-desc-container #screenshot-desc-container-text05 {
+			margin-top: -5px;
+		}
+
+		#adver-desc-container #adver-desc-container-text01,
+		#experience-desc-container #experience-text01 {
+			margin-top: 50px;
+		}
+
+		#adver-desc-container #adver-desc-container-text02,
+		#experience-desc-container #experience-text02 {
+			margin-top: -5px;
+		}
+
+		#adver-desc-container #adver-desc-container-text03,
+		#experience-desc-container #experience-text03 {
+			margin-top: 30px;
+		}
+
+		#adver-desc-container #adver-desc-container-text04,
+		#experience-desc-container #experience-text04 {
+			margin-top: -5px;
+		}
+
+		#adver-desc-container #adver-desc-container-text05{
+			margin-top: -5px;
+			color: #999999;
+		}
+
+		#benefit-desc-container #benefit-desc-container-text01 {
+			margin-top: 50px;
+		}
+
+		#benefit-desc-container #benefit-desc-container-text02,
+		#benefit-desc-container #benefit-desc-container-text03 {
+			margin-top: -5px;
+		}
+
+		
+		#benefit-desc-container #benefit-desc-container-text04 {
+			margin-top: 30px;
+		}
+		
+		#benefit-desc-container #benefit-desc-container-text05 {
+			margin-top: -5px;
+		}
+
+		#contact-container #contact-container-text01{
+			padding-top: 130px;
+			padding-bottom: 30px;
+		}
+		
+		#contact-container #contact-container-text02 {
+			padding-bottom: 100px;
+		}
+
+		#screenshot-desc-container img {
+			min-width: $image_width_768;
+			max-width: $image_width_768;
+			float: center;
+			margin: 100px auto;
+		}
+
+		#adver-desc-container img,
+		#experience-desc-container img {
+			margin: 50px auto;
+			min-width: $image_width_768;
+			max-width: $image_width_768;
+			float: center;
+		}
+
+		#benefit-desc-container img {
+			margin: 50px auto;
+			min-width: $image_width_768;
+			max-width: $image_width_768;
+			float: center;
+		}
+
+		#header #header-icon {
+			margin-top: 15px;
+			margin-left: -15px;
+			min-width: 400px;
+			max-width: 400px;
+		}
+
+		#footer #footer-icon {
+			padding-top: 18px;
+			margin-left: 25px;
+			min-width: 320px;
+			max-width: 320px;
+		}
+
 	}
+
+	@media screen and (min-width: 768px) {
+		.container {
+			width: 760px; 
+		}
+
+		.bolder-bottom:after {
+			display:block;
+		    clear:both;
+		    content : "";
+		    position: relative;
+		    height  : 50px;
+	    	margin-right: 0px;
+	    	border-bottom:1px solid #E6E7E7;
+		}
+
+		#main-container .container {
+			background-image:url("7.png");
+		}
+
+		#main-container h1 {
+			font-size: 2.5em;
+			margin-left: 60px;
+			padding-top: 50px;
+		}
+
+		#main-container h3 {
+			font-size: 1.625em;
+			padding-top: 10px;
+			padding-left: 60px;
+		}
+
+		#main-container h4 {
+			font-size: 1.375em;
+			padding-top: 10px;
+			padding-left: 60px;
+		}
+		
+		#main-container input {
+			font-size: 1.875em;
+			margin-top: 15px;
+			min-width: 360px;
+			min-height: 52px;
+			margin-left: 60px;
+			padding: 10px;
+			background-color: #E6E6E6;
+		}
+
+		#header button[type="submit"] {
+			margin-top: 4px;
+			min-width: 130px;
+
+			/*margin-top: 4px;
+			width: 120px;
+			height: 40px;*/
+		}
+
+		#main-container button[type="submit"]{
+			min-width: 130px;
+			margin-top: 15px;
+			margin-left: 290px;
+		}
+
+		#contact-container input {
+			font-size: 1.875em;
+			min-width: 350px;
+			max-width: 350px;
+			padding-top: 20px;
+			padding-bottom: 20px;
+			/*margin-left: 110px;*/
+			/*margin-left: -50px;*/
+		}
+
+		#contact-container button[type="submit"]{
+			margin-left: 20px;
+			-webkit-transform: translateY(10%);
+			-ms-transform: translateY(10%);
+			-o-transform: translateY(10%);
+			transform: translateY(10%)
+		}
+
+		#screenshot-desc-container h1,
+		#adver-desc-container h1,
+		#experience-desc-container h1 {
+			font-size: 1.625em;
+		}
+
+		#screenshot-desc-container h3,
+		#adver-desc-container h3,
+		#experience-desc-container h3 {
+			font-size: 1.375em;
+		}
+
+		#benefit-desc-container h1 {
+			font-size: 1.625em;
+		}
+
+		#benefit-desc-container h3 {
+			font-size: 1.355em;
+		}
+
+		#footer h1 {
+			font-size: 1.75em;
+			padding-right: $padding_container_right;
+		}
+
+		#screenshot-desc-container #screenshot-desc-container-text01 {
+			padding-top: 131px;
+		}
+		
+		#screenshot-desc-container #screenshot-desc-container-text02 {
+			margin-top: -5px;
+		}
+
+		#screenshot-desc-container #screenshot-desc-container-text03{
+			margin-top: -5px;
+		}
+
+		#screenshot-desc-container #screenshot-desc-container-text04 {
+			margin-top: 30px;
+		}
+
+		#screenshot-desc-container #screenshot-desc-container-text05 {
+			margin-top: -5px;
+		}
+
+		#adver-desc-container #adver-desc-container-text01,
+		#experience-desc-container #experience-text01 {
+			padding-top: 131px;
+		}
+
+		#adver-desc-container #adver-desc-container-text02,
+		#experience-desc-container #experience-text02 {
+			margin-top: -5px;
+		}
+
+		#adver-desc-container #adver-desc-container-text03,
+		#experience-desc-container #experience-text03 {
+			margin-top: 30px;
+			margin-left: -100px;
+		}
+
+		#adver-desc-container #adver-desc-container-text04,
+		#experience-desc-container #experience-text04 {
+			margin-top: -5px;
+			margin-left: -100px;
+		}
+
+		#experience-desc-container #experience-text04 {
+			margin-top: -5px;
+			margin-left: -111px;
+		}
+
+		#adver-desc-container #adver-desc-container-text05{
+			margin-top: -5px;
+			color: #999999;
+		}
+
+		#benefit-desc-container #benefit-desc-container-text01 {
+			padding-top: 170px;
+		}
+
+		#benefit-desc-container #benefit-desc-container-text02,
+		#benefit-desc-container #benefit-desc-container-text03 {
+			margin-top: -5px;
+		}
+
+		
+		#benefit-desc-container #benefit-desc-container-text04 {
+			margin-top: 30px;
+		}
+		
+		#benefit-desc-container #benefit-desc-container-text05 {
+			margin-top: -5px;
+		}
+
+		#contact-container #contact-container-text01{
+			padding-top: 200px;
+			padding-bottom: 30px;
+		}
+		
+		#contact-container #contact-container-text02 {
+			padding-bottom: 100px;
+		}
+
+		#screenshot-desc-container img {
+			margin-top: 125px;
+			min-width: $image_width_768;
+			max-width: $image_width_768;
+			float: right;
+		}
+
+		#adver-desc-container img,
+		#experience-desc-container img {
+			padding-top: 100px;
+			min-width: $image_width_768;
+			max-width: $image_width_768;
+			float: center;
+		}
+
+		#benefit-desc-container img {
+			padding-top: 100px;
+			min-width: $image_width_768;
+			max-width: $image_width_768;
+			float: right;
+		}
+
+		#header #header-icon {
+			margin-left: $padding_container_left;
+			margin-top: 13px;
+			min-width: 390px;
+			max-width: 390px;
+		}
+
+		#footer #footer-icon {
+			padding-top: 18px;
+			min-width: 320px;
+			max-width: 320px;
+		}
+
+
+	}
+
+	@media screen and (min-width: 992px) and (min-width: 1200px) {
+		.container {
+			width: 1032px; 
+		}
+
+		.bolder-bottom:after {
+			display:block;
+	    	clear:both;
+	    	content : "";
+	    	position: relative;
+	    	/*max-width:250px;*/
+	    	height  : 50px;
+	    	margin-right: 70px;
+	    	
+	    	border-bottom:1px solid #E6E7E7;
+		}
+		
+		#main-container .container {
+			background-image:url("2.png");
+		}
+
+		#main-container h1 {
+			font-size: 4.063em;
+			margin-left: $padding_container_left;
+			padding-top: 20px;
+		}
+
+		#main-container h3 {
+			font-size: 2.188em;
+			padding-top: 25px;
+			padding-left: $padding_container_left;
+		}
+
+		#main-container h4 {
+			font-size: 1.438em;
+			padding-left: $padding_container_left;
+			padding-top: 20px;
+		}
+
+		#main-container input {
+			font-size: 1.875em;
+			margin-top: 15px;
+			margin-left: 0px;
+			min-width: 380px;
+			min-height: 52px;
+			padding: 10px;
+			background-color: #E6E6E6;
+		}
+
+		#header button[type="submit"] {
+			margin-top: 7px;
+			width: 120px;
+			height: 40px;
+		}
+
+		#main-container button[type="submit"]{
+			margin-top: 15px;
+			margin-left: 250px;
+			width: 132px;
+			height: 40px;
+		}
+
+		#contact-container input {
+			font-size: 1.875em;
+			min-width: 380px;
+			padding-top: 20px;
+			padding-bottom: 20px;
+			background-color: #E6E6E6;
+		}
+
+		#contact-container button[type="submit"]{
+			width: 132px;
+			height: 40px;
+			margin-left: 20px;
+			-webkit-transform: translateY(10%);
+			-ms-transform: translateY(10%);
+			-o-transform: translateY(10%);
+			transform: translateY(10%)
+		}
+
+		#screenshot-desc-container h1 {
+			font-size: 2.188em;
+		}
+
+		#screenshot-desc-container h3 {
+			font-size: 1.5em;
+		}
+
+		#adver-desc-container h1,
+		#experience-desc-container h1 {
+			font-size: 2.188em;
+			margin-right: $padding_container_right;
+		}
+
+		#contact-container h1 {
+			font-size: 2.188em;
+			padding-left: $padding_container_left;
+		}
+
+		#contact-container h4 {
+			font-size: 1.5em;
+		}
+
+		#adver-desc-container h3,
+		#experience-desc-container h3 {
+			font-size: 1.5em;
+			margin-right: $padding_container_right;
+		}
+
+		#benefit-desc-container h1 {
+			font-size: 2.188em;
+			margin-right: $padding_container_right;
+		}
+
+		#benefit-desc-container h3 {
+			font-size: 1.5em;
+			margin-top: 30px;
+		}
+
+		#footer h1 {
+			font-size: 2.125em;
+			padding-right: $padding_container_right;
+		}
+
+		#screenshot-desc-container #screenshot-desc-container-text01 {
+			padding-top: 182px;
+		}
+		
+		#screenshot-desc-container #screenshot-desc-container-text02 {
+			margin-top: -5px;
+		}
+
+		#screenshot-desc-container #screenshot-desc-container-text03{
+			margin-top: -5px;
+		}
+
+		#screenshot-desc-container #screenshot-desc-container-text04 {
+			margin-top: 30px;
+		}
+
+		#screenshot-desc-container #screenshot-desc-container-text05 {
+			margin-top: -5px;
+		}
+
+		#adver-desc-container #adver-desc-container-text01,
+		#experience-desc-container #experience-text01 {
+			padding-top: 182px;
+		}
+
+		#adver-desc-container #adver-desc-container-text02,
+		#experience-desc-container #experience-text02 {
+			margin-top: -5px;
+			margin-left: -120px;
+		}
+
+		#adver-desc-container #adver-desc-container-text03,
+		#experience-desc-container #experience-text03 {
+			margin-top: 30px;
+			margin-right: $padding_container_right;
+		}
+
+		#adver-desc-container #adver-desc-container-text04,
+		#experience-desc-container #experience-text04 {
+			margin-top: -5px;
+			margin-left: -120px;
+		}
+
+		#adver-desc-container #adver-desc-container-text05{
+			margin-right: $padding_container_right;
+			margin-top: -5px;
+			color: #999999;
+		}
+
+		#benefit-desc-container #benefit-desc-container-text01 {
+			padding-top: 170px;
+		}
+
+		#benefit-desc-container #benefit-desc-container-text02,
+		#benefit-desc-container #benefit-desc-container-text03 {
+			margin-top: -5px;
+		}
+
+		
+		#benefit-desc-container #benefit-desc-container-text04 {
+			margin-top: 30px;
+		}
+		
+		#benefit-desc-container #benefit-desc-container-text05 {
+			margin-top: -5px;
+		}
+
+		#contact-container #contact-container-text01{
+			padding-top: 200px;
+			padding-bottom: 30px;
+		}
+		
+		#contact-container #contact-container-text02 {
+			/*margin-left: -55px;*/
+			padding-bottom: 100px;
+		}
+
+		#screenshot-desc-container img {
+			margin-top: 125px;
+			min-width: $image_width;
+			float: right;
+			margin-right: 100px;
+		}
+
+		#adver-desc-container img,
+		#experience-desc-container img {
+			padding-top: 100px;
+			float: center;
+			min-width: $image_width;
+		}
+
+		#benefit-desc-container img {
+			padding-top: 100px;
+			float: right;
+			min-width: $image_width;
+			min-height: $image_height;
+			margin-right: 100px;
+		}
+
+		#header #header-icon {
+			margin-left: $padding_container_left;
+			margin-top: 13px;
+			min-width: 420px;
+			max-width: 420px;
+		}
+
+		#footer #footer-icon {
+			padding-top: 13px;
+			min-width: 420px;
+			max-width: 420px;
+		}
+
+
+	}
+
+/*	
+========================================
+				header
+========================================
+*/
 
 	#header .navbar-fixed-top {
 		height: 90px;
 		background-color: #FFF;
 	}
 
-	#header #header-icon {
-		/*margin-top: 10px;*/
-		margin-left: $padding_container_left;
-		min-width: 420px;
-		min-height: 46px;
-		max-width: 421px;
-		max-height: 46px;
+	#header a {
+		background-color: transparent;
 	}
 
 	#header #header-button {
-		/*margin-right: $padding_container_right;*/
-		margin-right: 130px;
+		margin-right: 90px;
 		margin-top: 25px;
-		/*margin-bottom: 10px;*/
 		margin-bottom: 28px;
 	}
+
+/*	
+========================================
+				container
+========================================
+*/
 
 	#main-container .container {
 		/*height: 600px;*/
 		background-size: 100% 100%;
 		margin-top: 90px;
-		background-color: gray;
 	}
 
-	#main-container h1 {
-		font-family: "Kopub-Medium";
-		font-size: 4.063em;
-		margin-left: $padding_container_left;
-		padding-top: 50px;
-	}
-
-	#main-container h3 {
-		font-family: "Kopub-Light";
-		font-size: 2.188em;
-		padding-top: 25px;
-		padding-left: $padding_container_left;
-	}
-
-	#main-container h4 {
-		font-family: "Kopub-Medium";
-		color: $font_color_blue;
-		font-size: 1.438em;
-		padding-left: $padding_container_left;
-		padding-top: 20px;
-	}
-
-	#main-container input {
-		font: 500 12px/16px "Kopub-Light", Helvetica, Arial, sans-serif;
-		font-size: 13pt;
-		margin-left: $padding_container_left;
-		margin-top: 15px;
-		min-width: 380px;
-		min-height: 52px;
-		padding: 10px;
-		background-color: #E6E6E6;
-	}
-
-	#main-container button[type="submit"]{
-		font-family: 'Kopub-Light';
-	    width: 132px;
-	    height: 40px;
-	    margin-top: 15px;
-	    margin-left: 250px;
-	    font-size: 19pt;
-	    color: #FFF;
-	    background-color: $button_color;
-	    border-radius: 10px;
-	    -webkit-border-radius: 10px;
-	    -moz-border-radius: 10px;
-	    -webkit-transition: border-color 0.3s ease-in-out;
-	    -moz-transition: border-color 0.3s ease-in-out;
-	    transition: border-color 0.3s ease-in-out;
-	    border: 1px solid $button_color;
-	}
-
-	#main-container button[type="submit"]:hover {
-	    background-color: #FFF;
-	    color: $button_color;
+	#footer .container {
+		margin-top: 30px;
+		margin-bottom: 30px;
+		background-color: #FFF;
 	}
 
 	#screenshot-desc-container,
@@ -175,260 +804,99 @@ $padding_container_right: 75px;
 		background-color: $container_color;
 	}
 
-	#screenshot-desc-container #text01{
-		font-family: "Kopub-Light";
-		font-size: 2.188em;
-		margin-left: $padding_container_left;
-		padding-top: 200px;
-	}
+/*	
+========================================
+			typography
+========================================
+*/
 
-	#screenshot-desc-container #text02{
-		font-family: "Kopub-Light";
-		margin-top: -5px;
-		font-size: 2.188em;
-		margin-left: $padding_container_left;
-	}
-
-	#screenshot-desc-container #text03{
-		font-family: "Kopub-Light";
-		color: $font_color_blue;
-		margin-top: -5px;
-		font-size: 2.188em;
-		margin-left: $padding_container_left;
-	}
-
-	#screenshot-desc-container #text04 {
+	#main-container h1 {
 		font-family: "Kopub-Medium";
-		font-size: 1.5em;
-		margin-top: 30px;
-		margin-left: $padding_container_left;
 	}
 
-	#screenshot-desc-container #text05 {
+	#main-container h3 {
+		font-family: "Kopub-Light";
+	}
+
+	#main-container h4 {
 		font-family: "Kopub-Medium";
-		font-size: 1.5em;
-		margin-top: -5px;
-		margin-left: $padding_container_left;
-	}
-	
-	#screenshot-desc-container img {
-		margin-top: 125px;
-		/*margin-left: $padding_container_left;*/
-		/*margin-right: 155px;*/
-		max-width: 340px;
-		max-height: 365px;
-		float: right;
-		margin-right: 100px;
-	}
-
-	#adver-desc-container img,
-	#experience-desc-container img {
-		padding-top: 100px;
-		float: center;
-		/*padding-left: $padding_container_left;*/
-		min-width: 342px;
-		min-height: 365px;
-	}
-
-	#benefit-desc-container img {
-		padding-top: 100px;
-		float: right;
-		min-width: 342px;
-		min-height: 365px;
-		margin-right: 100px;
-	}
-
-	#adver-desc-container #text01,
-	#experience-desc-container #text01 {
-		font-family: "Kopub-Light";
-		font-size: 2.188em;
-		margin-right: $padding_container_right;
-		padding-top: 170px;
-	}
-
-	#adver-desc-container #text02,
-	#experience-desc-container #text02 {
-		font-family: "Kopub-Light";
-		font-size: 2.188em;
-		margin-top: -5px;
-		margin-right: $padding_container_right;
-	}
-
-	#adver-desc-container #text02 strong,
-	#experience-desc-container #text02 strong {
 		color: $font_color_blue;
 	}
 
-	#adver-desc-container #text03,
-	#experience-desc-container #text03 {
+	#screenshot-desc-container h1 {
+		font-family: "Kopub-Light";
+		margin-left: $padding_container_left;
+		
+	}
+	
+	#screenshot-desc-container h3 {
 		font-family: "Kopub-Medium";
-		font-size: 1.5em;
-		margin-top: 30px;
-		margin-left: -100px;
-		margin-right: $padding_container_right;
+		margin-left: $padding_container_left;
 	}
 
-	#adver-desc-container #text04,
-	#experience-desc-container #text04 {
-		font-family: "Kopub-Medium";
-		font-size: 1.5em;
-		margin-top: -5px;
-		margin-right: $padding_container_right;
-		margin-left: -100px;
-	}
-
-	#adver-desc-container #text05{
-		font-family: "Kopub-Light";
-		font-size: 1.5em;
-		margin-right: $padding_container_right;
-		margin-top: -5px;
-		color: #999999;
-	}
-
-
-
-	#benefit-desc-container #text01 {
-		font-family: "Kopub-Light";
-		font-size: 2.188em;
-		margin-right: $padding_container_right;
-		padding-top: 170px;
-	}
-
-	#benefit-desc-container #text02 {
-		font-family: "Kopub-Light";
-		font-size: 2.188em;
-		margin-right: $padding_container_right;
-		margin-top: -5px;
-	}
-
-	#benefit-desc-container #text03 {
-		font-family: "Kopub-Light";
-		font-size: 2.188em;
-		margin-right: $padding_container_right;
-		margin-top: -5px;
-	}
-
-	#benefit-desc-container #text02 strong,
-	#benefit-desc-container #text03 strong {
+	#screenshot-desc-container #screenshot-desc-container-text03 strong {
 		color: $font_color_blue;
 	}
-	
-	#benefit-desc-container #text04 {
-		margin-top: 30px;
-		font-family: "Kopub-Medium";
-		font-size: 1.5em;
-		margin-top: 30px;
-	}
-	
-	#benefit-desc-container #text05 {
-		margin-top: 30px;
-		font-family: "Kopub-Medium";
-		font-size: 1.5em;
-		margin-top: -5px;
+
+	#adver-desc-container h1,
+	#experience-desc-container h1 {
+		font-family: "Kopub-Light";
 	}
 
-	#contact-container #text01{
-		font-family: "Kopub-Light";
-		font-size: 2.188em;
-		padding-top: 200px;
-		padding-bottom: 30px;
-		padding-left: $padding_container_left;
-	}
-	
-	#contact-container #text02 {
+	#adver-desc-container h3,
+	#experience-desc-container h3 {
 		font-family: "Kopub-Medium";
-		font-size: 1.5em;
+	}
+
+	#adver-desc-container #adver-desc-container-text02 strong,
+	#experience-desc-container #experience-text02 strong {
 		color: $font_color_blue;
-		padding-left: 55px;
-		padding-bottom: 100px;
 	}
 
-	#contact-container input {
-		font: 500 12px/16px "Kopub-Light", Helvetica, Arial, sans-serif;
-		font-size: 13pt;
-		/*margin-left: $padding_container_left;*/
-		width: 380px;
-		/*min-height: 50px;*/	
-		padding-top: 20px;
-		padding-bottom: 20px;
-		/*padding: 10px;*/
-		background-color: #E6E6E6;
-	}
-
-	#contact-container button[type="submit"]{
-		font-family: 'Kopub-Light';
-	    width: 132px;
-	    max-height: 40px;
-	    margin-left: 20px;
-	    font-size: 19pt;
-	    color: #fff;
-	    background-color: $button_color;
-	    border-radius: 10px;
-	    -webkit-border-radius: 10px;
-	    -moz-border-radius: 10px;
-	    -webkit-transition: border-color 0.3s ease-in-out;
-	    -moz-transition: border-color 0.3s ease-in-out;
-	    transition: border-color 0.3s ease-in-out;
-	    border: thin solid $button_color;
-	    -webkit-transform: translateY(10%);
-		-ms-transform: translateY(10%);
-		-o-transform: translateY(10%);
-		transform: translateY(10%)
-	}
-
-	#contact-container button[type="submit"]:hover {
-	    background-color: #FFF;
-	    color: $button_color;
-	}
-
-	#footer .container {
-		margin-top: 30px;
-		margin-bottom: 30px;
-		background-color: #FFF;
-	}
-
-	#footer #footer-icon {
-		margin-top: 10px;
-		min-width: 420px;
-		min-height: 46px;
-		max-width: 421px;
-		max-height: 46px;
-	}
-
-	#footer #text01 {
+	#benefit-desc-container h1 {
 		font-family: "Kopub-Light";
-		font-size: 2.125em;
-		padding-right: $padding_container_right;
-		/*font-size: 1.75em;*/
 	}
 
+	#benefit-desc-container h3 {
+		font-family: "Kopub-Medium";
+	}
 
-/*==============================
-		contact form
-==============================*/
-/*#header .button {
-    margin-top: 43px;
-    margin-left: 920px;
-    margin-bottom: 28px;
-    font-size: 1.25em;
-    color: #fff;
-    background-color: $font_color_blue;
-    border-radius: 10px;
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    -webkit-transition: border-color 0.3s ease-in-out;
-    -moz-transition: border-color 0.3s ease-in-out;
-    transition: border-color 0.3s ease-in-out;
-    border: 1px solid $font_color_blue;
-}
+	
 
-#header button:focus {
-	position: relative;
-	outline: none;
-}*/
+	#benefit-desc-container #benefit-desc-container-text02 strong,
+	#benefit-desc-container #benefit-desc-container-text03 strong {
+		color: $font_color_blue;
+	}
 
-#header a {
-	background-color: transparent;
-}
+	
+	#contact-container h1 {
+		font-family: "Kopub-Light";
+	}
+
+	#contact-container h4 {
+		font-family: "Kopub-Medium";
+		color: $font_color_blue;
+	}
+	#footer h1 {
+		font-family: "Kopub-Light";
+	}
+
+/*	
+========================================
+				image
+========================================
+*/
+
+	
+
+/*	
+========================================
+			input & button
+========================================
+*/
 
 
+
+
+/*자간*/
+/*letter-spacing: 2px*/
