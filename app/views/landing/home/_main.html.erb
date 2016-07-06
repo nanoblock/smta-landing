@@ -1,0 +1,31 @@
+<div id="main-container">
+      <div class="container" style="background-image:url(<%= asset_path "main.png" %>)">
+
+      <h1 class="text-left">APP을 광고하는<br>가장 심플한 방법</h1>
+            <h3 class="text-left">광고하고 싶은 화면을 캡처하고<br>
+              업데이트만 하면 광고 끝!</h3>
+            <h4>메일주소를 남겨주시면 무료로 광고해 드립니다.</h4>
+            
+            <%= form_tag( '/mail', {method: "post", id: "contact", class: "form-inline form-group"}) do %> 
+             <%= text_field_tag :email, '',{class: 'input-group form-control', placeholder: '', tabindex: '1', :required => "autofocus"} %>
+             <br>
+            <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">무료신청</button>
+         <% end %>
+
+         
+
+        <div class="row" >
+        <div class="col-sm-6" id="row-left">
+            
+
+        </div>
+        <div class="col-sm-6" id="row-right" >
+          
+          <!-- <div class="embed-responsive embed-responsive-16by9">
+        	  <iframe class="embed-responsive-item" src="http://www.youtube.com/embed/BSpXGYodwVU" allowfullscreen=""></iframe>
+		      </div> -->
+		  
+		    </div>
+		</div>
+	</div>
+</div>

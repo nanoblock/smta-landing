@@ -1,15 +1,24 @@
+
 @font-face {
-    font-family: 'nanumsquareR';
-    src: asset-url('NanumSquareR.ttf') format('truetype');
+	font-family: 'Kopub-Light';
+	src: asset-url('KoPubDotumLight.ttf') format('truetype');
     
     font-weight: normal;
 	font-style: normal;
 }
 
 @font-face {
-	font-family: 'bebasneue';
-	src: asset-url('BebasNeue.otf') format("truetype");
+	font-family: 'Kopub-Medium';
+	src: asset-url('KoPubDotumMedium.ttf') format('truetype');
+    
+    font-weight: normal;
+	font-style: normal;
+}
 
-	font-weight: normal;
+@font-face {
+	font-family: 'Kopub-Bold';
+	src: asset-url('KoPubDotumBold.ttf') format('truetype');
+    
+    font-weight: normal;
 	font-style: normal;
 }

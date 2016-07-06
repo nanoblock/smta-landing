@@ -1,0 +1,434 @@
+
+$continer_height: 500px;
+
+$img_height: 400px;
+
+$font_color_blue: #007BB5;
+$button_color: #0071BC;
+
+$container_color: rgba(0, 102, 204, 0.05);
+
+$padding_container_left: 0px;
+/*$padding_container_right: 0px;*/
+/*$padding_container_left: 140px;*/
+$padding_container_right: 75px;
+
+/*lg*/
+@media only screen and (min-width: 1200px) {
+
+}
+
+/*md*/
+@media only screen and (max-width: 1200px) {
+
+}
+
+/*sm*/
+@media screen and (max-width : 992px) {
+	
+}
+
+/*xs*/
+@media only screen and (max-width : 768px) {
+	
+}
+/*xs */
+@media only screen and (max-width : 480px) {
+
+}
+
+	.container {
+		margin-right: auto;
+		margin-left: auto;
+		padding-left: 15px;
+		padding-right: 15px; 
+	}
+
+	.container:before, .container:after {
+		content: " ";
+		display: table; 
+	}
+  
+	.container:after {
+		clear: both; 
+	}
+		
+	@media (min-width: 768px) {
+		.container {
+			width: 750px; } 
+	}
+
+	@media (min-width: 992px) {
+		.container {
+			width: 970px; } 
+	}
+
+	@media (min-width: 1200px) {
+		.container {
+			width: 1024px; 
+		}
+	} 
+	
+
+	.bolder-bottom:after {
+		display:block;
+    	clear:both;
+    	content : "";
+    	position: relative;
+    	/*max-width:250px;*/
+    	height  : 50px;
+    	margin-right: 70px;
+    	
+    	border-bottom:1px solid #E6E7E7;
+	}
+
+	#header .navbar-fixed-top {
+		height: 90px;
+		background-color: #FFF;
+	}
+
+	#header #header-icon {
+		/*margin-top: 10px;*/
+		margin-left: $padding_container_left;
+		min-width: 420px;
+		min-height: 46px;
+		max-width: 421px;
+		max-height: 46px;
+	}
+
+	#header #header-button {
+		/*margin-right: $padding_container_right;*/
+		margin-right: 130px;
+		margin-top: 25px;
+		/*margin-bottom: 10px;*/
+		margin-bottom: 28px;
+	}
+
+	#main-container .container {
+		/*height: 600px;*/
+		background-size: 100% 100%;
+		margin-top: 90px;
+		background-color: gray;
+	}
+
+	#main-container h1 {
+		font-family: "Kopub-Medium";
+		font-size: 4.063em;
+		margin-left: $padding_container_left;
+		padding-top: 50px;
+	}
+
+	#main-container h3 {
+		font-family: "Kopub-Light";
+		font-size: 2.188em;
+		padding-top: 25px;
+		padding-left: $padding_container_left;
+	}
+
+	#main-container h4 {
+		font-family: "Kopub-Medium";
+		color: $font_color_blue;
+		font-size: 1.438em;
+		padding-left: $padding_container_left;
+		padding-top: 20px;
+	}
+
+	#main-container input {
+		font: 500 12px/16px "Kopub-Light", Helvetica, Arial, sans-serif;
+		font-size: 13pt;
+		margin-left: $padding_container_left;
+		margin-top: 15px;
+		min-width: 380px;
+		min-height: 52px;
+		padding: 10px;
+		background-color: #E6E6E6;
+	}
+
+	#main-container button[type="submit"]{
+		font-family: 'Kopub-Light';
+	    width: 132px;
+	    height: 40px;
+	    margin-top: 15px;
+	    margin-left: 250px;
+	    font-size: 19pt;
+	    color: #FFF;
+	    background-color: $button_color;
+	    border-radius: 10px;
+	    -webkit-border-radius: 10px;
+	    -moz-border-radius: 10px;
+	    -webkit-transition: border-color 0.3s ease-in-out;
+	    -moz-transition: border-color 0.3s ease-in-out;
+	    transition: border-color 0.3s ease-in-out;
+	    border: 1px solid $button_color;
+	}
+
+	#main-container button[type="submit"]:hover {
+	    background-color: #FFF;
+	    color: $button_color;
+	}
+
+	#screenshot-desc-container,
+	#adver-desc-container,
+	#benefit-desc-container,
+	#experience-desc-container,
+	#contact-container {
+		background-color: $container_color;
+	}
+
+	#screenshot-desc-container #text01{
+		font-family: "Kopub-Light";
+		font-size: 2.188em;
+		margin-left: $padding_container_left;
+		padding-top: 200px;
+	}
+
+	#screenshot-desc-container #text02{
+		font-family: "Kopub-Light";
+		margin-top: -5px;
+		font-size: 2.188em;
+		margin-left: $padding_container_left;
+	}
+
+	#screenshot-desc-container #text03{
+		font-family: "Kopub-Light";
+		color: $font_color_blue;
+		margin-top: -5px;
+		font-size: 2.188em;
+		margin-left: $padding_container_left;
+	}
+
+	#screenshot-desc-container #text04 {
+		font-family: "Kopub-Medium";
+		font-size: 1.5em;
+		margin-top: 30px;
+		margin-left: $padding_container_left;
+	}
+
+	#screenshot-desc-container #text05 {
+		font-family: "Kopub-Medium";
+		font-size: 1.5em;
+		margin-top: -5px;
+		margin-left: $padding_container_left;
+	}
+	
+	#screenshot-desc-container img {
+		margin-top: 125px;
+		/*margin-left: $padding_container_left;*/
+		/*margin-right: 155px;*/
+		max-width: 340px;
+		max-height: 365px;
+		float: right;
+		margin-right: 100px;
+	}
+
+	#adver-desc-container img,
+	#experience-desc-container img {
+		padding-top: 100px;
+		float: center;
+		/*padding-left: $padding_container_left;*/
+		min-width: 342px;
+		min-height: 365px;
+	}
+
+	#benefit-desc-container img {
+		padding-top: 100px;
+		float: right;
+		min-width: 342px;
+		min-height: 365px;
+		margin-right: 100px;
+	}
+
+	#adver-desc-container #text01,
+	#experience-desc-container #text01 {
+		font-family: "Kopub-Light";
+		font-size: 2.188em;
+		margin-right: $padding_container_right;
+		padding-top: 170px;
+	}
+
+	#adver-desc-container #text02,
+	#experience-desc-container #text02 {
+		font-family: "Kopub-Light";
+		font-size: 2.188em;
+		margin-top: -5px;
+		margin-right: $padding_container_right;
+	}
+
+	#adver-desc-container #text02 strong,
+	#experience-desc-container #text02 strong {
+		color: $font_color_blue;
+	}
+
+	#adver-desc-container #text03,
+	#experience-desc-container #text03 {
+		font-family: "Kopub-Medium";
+		font-size: 1.5em;
+		margin-top: 30px;
+		margin-left: -100px;
+		margin-right: $padding_container_right;
+	}
+
+	#adver-desc-container #text04,
+	#experience-desc-container #text04 {
+		font-family: "Kopub-Medium";
+		font-size: 1.5em;
+		margin-top: -5px;
+		margin-right: $padding_container_right;
+		margin-left: -100px;
+	}
+
+	#adver-desc-container #text05{
+		font-family: "Kopub-Light";
+		font-size: 1.5em;
+		margin-right: $padding_container_right;
+		margin-top: -5px;
+		color: #999999;
+	}
+
+
+
+	#benefit-desc-container #text01 {
+		font-family: "Kopub-Light";
+		font-size: 2.188em;
+		margin-right: $padding_container_right;
+		padding-top: 170px;
+	}
+
+	#benefit-desc-container #text02 {
+		font-family: "Kopub-Light";
+		font-size: 2.188em;
+		margin-right: $padding_container_right;
+		margin-top: -5px;
+	}
+
+	#benefit-desc-container #text03 {
+		font-family: "Kopub-Light";
+		font-size: 2.188em;
+		margin-right: $padding_container_right;
+		margin-top: -5px;
+	}
+
+	#benefit-desc-container #text02 strong,
+	#benefit-desc-container #text03 strong {
+		color: $font_color_blue;
+	}
+	
+	#benefit-desc-container #text04 {
+		margin-top: 30px;
+		font-family: "Kopub-Medium";
+		font-size: 1.5em;
+		margin-top: 30px;
+	}
+	
+	#benefit-desc-container #text05 {
+		margin-top: 30px;
+		font-family: "Kopub-Medium";
+		font-size: 1.5em;
+		margin-top: -5px;
+	}
+
+	#contact-container #text01{
+		font-family: "Kopub-Light";
+		font-size: 2.188em;
+		padding-top: 200px;
+		padding-bottom: 30px;
+		padding-left: $padding_container_left;
+	}
+	
+	#contact-container #text02 {
+		font-family: "Kopub-Medium";
+		font-size: 1.5em;
+		color: $font_color_blue;
+		padding-left: 55px;
+		padding-bottom: 100px;
+	}
+
+	#contact-container input {
+		font: 500 12px/16px "Kopub-Light", Helvetica, Arial, sans-serif;
+		font-size: 13pt;
+		/*margin-left: $padding_container_left;*/
+		width: 380px;
+		/*min-height: 50px;*/	
+		padding-top: 20px;
+		padding-bottom: 20px;
+		/*padding: 10px;*/
+		background-color: #E6E6E6;
+	}
+
+	#contact-container button[type="submit"]{
+		font-family: 'Kopub-Light';
+	    width: 132px;
+	    max-height: 40px;
+	    margin-left: 20px;
+	    font-size: 19pt;
+	    color: #fff;
+	    background-color: $button_color;
+	    border-radius: 10px;
+	    -webkit-border-radius: 10px;
+	    -moz-border-radius: 10px;
+	    -webkit-transition: border-color 0.3s ease-in-out;
+	    -moz-transition: border-color 0.3s ease-in-out;
+	    transition: border-color 0.3s ease-in-out;
+	    border: thin solid $button_color;
+	    -webkit-transform: translateY(10%);
+		-ms-transform: translateY(10%);
+		-o-transform: translateY(10%);
+		transform: translateY(10%)
+	}
+
+	#contact-container button[type="submit"]:hover {
+	    background-color: #FFF;
+	    color: $button_color;
+	}
+
+	#footer .container {
+		margin-top: 30px;
+		margin-bottom: 30px;
+		background-color: #FFF;
+	}
+
+	#footer #footer-icon {
+		margin-top: 10px;
+		min-width: 420px;
+		min-height: 46px;
+		max-width: 421px;
+		max-height: 46px;
+	}
+
+	#footer #text01 {
+		font-family: "Kopub-Light";
+		font-size: 2.125em;
+		padding-right: $padding_container_right;
+		/*font-size: 1.75em;*/
+	}
+
+
+/*==============================
+		contact form
+==============================*/
+/*#header .button {
+    margin-top: 43px;
+    margin-left: 920px;
+    margin-bottom: 28px;
+    font-size: 1.25em;
+    color: #fff;
+    background-color: $font_color_blue;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -webkit-transition: border-color 0.3s ease-in-out;
+    -moz-transition: border-color 0.3s ease-in-out;
+    transition: border-color 0.3s ease-in-out;
+    border: 1px solid $font_color_blue;
+}
+
+#header button:focus {
+	position: relative;
+	outline: none;
+}*/
+
+#header a {
+	background-color: transparent;
+}
+
+
