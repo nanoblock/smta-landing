@@ -1,0 +1,16 @@
+I, [2016-07-07T15:00:38.756338 #15178]  INFO -- : Refreshing Gem list
+I, [2016-07-07T15:00:40.111545 #15178]  INFO -- : unlinking existing socket=/var/www/showmetheapps/smta-landing/tmp/sockets/.unicorn.sock
+I, [2016-07-07T15:00:40.111671 #15178]  INFO -- : listening on addr=/var/www/showmetheapps/smta-landing/tmp/sockets/.unicorn.sock fd=11
+I, [2016-07-07T15:00:40.211524 #15181]  INFO -- : worker=0 ready
+I, [2016-07-07T15:00:40.213626 #15178]  INFO -- : master process ready
+I, [2016-07-07T15:00:40.213036 #15183]  INFO -- : worker=1 ready
+I, [2016-07-07T15:00:40.218682 #15186]  INFO -- : worker=2 ready
+I, [2016-07-07T15:00:40.219655 #15189]  INFO -- : worker=3 ready
+I, [2016-07-07T15:05:34.713404 #15309]  INFO -- : Refreshing Gem list
+I, [2016-07-07T15:05:36.072937 #15309]  INFO -- : unlinking existing socket=/var/www/showmetheapps/smta-landing/tmp/sockets/.unicorn.sock
+I, [2016-07-07T15:05:36.073071 #15309]  INFO -- : listening on addr=/var/www/showmetheapps/smta-landing/tmp/sockets/.unicorn.sock fd=11
+I, [2016-07-07T15:05:36.166503 #15312]  INFO -- : worker=0 ready
+I, [2016-07-07T15:05:36.168087 #15314]  INFO -- : worker=1 ready
+I, [2016-07-07T15:05:36.168780 #15309]  INFO -- : master process ready
+I, [2016-07-07T15:05:36.173980 #15317]  INFO -- : worker=2 ready
+I, [2016-07-07T15:05:36.174866 #15320]  INFO -- : worker=3 ready

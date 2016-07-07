@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  # root to: 'pages#show', id: 'client'
+  root to: 'pages#show', id: 'home'
 
   get 'landing/:id' => "high_voltage/pages#show", as: :page, format: false
 
