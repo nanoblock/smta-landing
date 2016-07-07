@@ -3,7 +3,10 @@ Rails.application.routes.draw do
 
   get 'landing/:id' => "high_voltage/pages#show", as: :page, format: false
 
-  get 'mail', to: 'mail#send'
-  post 'mail', to: 'mail#send'
-  
+  # get 'mail', to: 'mail#send'
+  # post 'mail', to: 'mail#send'
+
+  get 'contact', to: 'contact#send'
+  post 'contact', to: 'contact#send'
+
 end
