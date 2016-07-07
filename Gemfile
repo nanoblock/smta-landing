@@ -19,6 +19,9 @@ gem 'browser'
 #Monitoring
 gem 'google-analytics-rails'
 
+# stagging
+gem 'unicorn'
+
 group :development do
   gem 'spring'
 end
