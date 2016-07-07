@@ -15,6 +15,9 @@ gem 'bootstrap-sass'
 gem 'high_voltage'
 gem 'browser'
 
+#Monitoring
+gem 'google-analytics-rails'
+
 group :development do
   gem 'spring'
 end

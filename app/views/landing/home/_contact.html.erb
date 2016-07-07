@@ -8,7 +8,8 @@
 			
 			<%= text_field_tag :email, '',{class: 'input-group form-control', placeholder: '', tabindex: '1', :required => "autofocus"} %>
 			
-			<button name="submit" type="submit" id="contact-submit" data-submit="...Sending">무료신청</button>
+
+			<button name="submit" type="submit" id="contact-submit" data-submit="...Sending" onClick="<%= analytics_track_event "Mail", "Send", "Contact Section" %>">무료신청</button>
 			<% end %>
 			
 

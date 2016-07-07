@@ -15,7 +15,6 @@ vendor/bundle
 /db/*.sqlite3-journal
 
 # Ignore all logfiles and tempfiles.
-/log/*.log
 /tmp
 
 # Ignore other unneeded files.

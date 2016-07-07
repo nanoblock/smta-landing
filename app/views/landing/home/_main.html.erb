@@ -10,7 +10,7 @@
             <%= form_tag( '/mail', {method: "post", id: "contact", class: "form-inline form-group"}) do %> 
              <%= text_field_tag :email, '',{class: 'input-group form-control', placeholder: '', tabindex: '1', :required => "autofocus"} %>
              <br>
-            <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">무료신청</button>
+            <button name="submit" type="submit" id="contact-submit" data-submit="...Sending" onClick="<%= analytics_track_event "Mail", "Send", "Main Section" %>">무료신청</button>
          <% end %>
 
          
