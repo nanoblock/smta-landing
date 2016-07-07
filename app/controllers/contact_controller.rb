@@ -21,5 +21,5 @@ class ContactController < ApplicationController
 			return false
 		end
 	end
-
+	#pulltest
 end
