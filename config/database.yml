@@ -30,7 +30,9 @@ test:
 
 production:
   <<: *default
-  database: smta-landing_production
-  username: smta-landing
-  password: <%= ENV['USER-AUTHOR_DATABASE_PASSWORD'] %>
+  database: <%= ENV["DB_NAME"] %>
+  username: <%= ENV["DB_USERNAME"] %>
+  password: <%= ENV["DB_PASSWORD"] %>
+  host: <%= ENV["DB_HOSTNAME"] %>
+  port: <%= ENV["DB_PORT"] %>
 
