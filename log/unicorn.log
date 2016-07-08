@@ -14,3 +14,40 @@ I, [2016-07-07T15:05:36.168087 #15314]  INFO -- : worker=1 ready
 I, [2016-07-07T15:05:36.168780 #15309]  INFO -- : master process ready
 I, [2016-07-07T15:05:36.173980 #15317]  INFO -- : worker=2 ready
 I, [2016-07-07T15:05:36.174866 #15320]  INFO -- : worker=3 ready
+I, [2016-07-07T15:18:15.956851 #15446]  INFO -- : Refreshing Gem list
+I, [2016-07-07T15:18:17.281555 #15446]  INFO -- : unlinking existing socket=/var/www/showmetheapps/smta-landing/tmp/sockets/.unicorn.sock
+I, [2016-07-07T15:18:17.281711 #15446]  INFO -- : listening on addr=/var/www/showmetheapps/smta-landing/tmp/sockets/.unicorn.sock fd=11
+I, [2016-07-07T15:18:17.358462 #15449]  INFO -- : worker=0 ready
+I, [2016-07-07T15:18:17.360120 #15451]  INFO -- : worker=1 ready
+I, [2016-07-07T15:18:17.360817 #15446]  INFO -- : master process ready
+I, [2016-07-07T15:18:17.365758 #15454]  INFO -- : worker=2 ready
+I, [2016-07-07T15:18:17.366599 #15457]  INFO -- : worker=3 ready
+I, [2016-07-07T15:49:44.297830 #15812]  INFO -- : Refreshing Gem list
+I, [2016-07-07T15:49:45.628877 #15812]  INFO -- : unlinking existing socket=/var/www/showmetheapps/smta-landing/tmp/sockets/.unicorn.sock
+I, [2016-07-07T15:49:45.629000 #15812]  INFO -- : listening on addr=/var/www/showmetheapps/smta-landing/tmp/sockets/.unicorn.sock fd=11
+I, [2016-07-07T15:49:45.694283 #15815]  INFO -- : worker=0 ready
+I, [2016-07-07T15:49:45.695859 #15817]  INFO -- : worker=1 ready
+I, [2016-07-07T15:49:45.696563 #15812]  INFO -- : master process ready
+I, [2016-07-07T15:49:45.701669 #15820]  INFO -- : worker=2 ready
+I, [2016-07-07T15:49:45.702529 #15823]  INFO -- : worker=3 ready
+/home/ec2-user/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/unicorn-5.1.0/lib/unicorn/http_server.rb:195:in `pid=': Already running on PID:15812 (or pid=/var/www/showmetheapps/smta-landing/tmp/pids/unicorn.pid is stale) (ArgumentError)
+	from /home/ec2-user/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/unicorn-5.1.0/lib/unicorn/http_server.rb:127:in `start'
+	from /home/ec2-user/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/unicorn-5.1.0/bin/unicorn_rails:209:in `<top (required)>'
+	from /home/ec2-user/.rbenv/versions/2.3.1/bin/unicorn_rails:23:in `load'
+	from /home/ec2-user/.rbenv/versions/2.3.1/bin/unicorn_rails:23:in `<main>'
+I, [2016-07-07T16:51:20.348125 #16101]  INFO -- : Refreshing Gem list
+I, [2016-07-07T16:51:21.735884 #16101]  INFO -- : unlinking existing socket=/var/www/showmetheapps/smta-landing/tmp/sockets/.unicorn.sock
+I, [2016-07-07T16:51:21.735998 #16101]  INFO -- : listening on addr=/var/www/showmetheapps/smta-landing/tmp/sockets/.unicorn.sock fd=11
+I, [2016-07-07T16:51:21.813759 #16104]  INFO -- : worker=0 ready
+I, [2016-07-07T16:51:21.815368 #16106]  INFO -- : worker=1 ready
+I, [2016-07-07T16:51:21.816050 #16101]  INFO -- : master process ready
+I, [2016-07-07T16:51:21.820846 #16109]  INFO -- : worker=2 ready
+I, [2016-07-07T16:51:21.821660 #16112]  INFO -- : worker=3 ready
+I, [2016-07-08T02:32:13.641741 #17284]  INFO -- : Refreshing Gem list
+I, [2016-07-08T02:32:14.966007 #17284]  INFO -- : unlinking existing socket=/var/www/showmetheapps/smta-landing/tmp/sockets/.unicorn.sock
+I, [2016-07-08T02:32:14.966163 #17284]  INFO -- : listening on addr=/var/www/showmetheapps/smta-landing/tmp/sockets/.unicorn.sock fd=11
+I, [2016-07-08T02:32:15.036784 #17287]  INFO -- : worker=0 ready
+I, [2016-07-08T02:32:15.038341 #17289]  INFO -- : worker=1 ready
+I, [2016-07-08T02:32:15.039104 #17284]  INFO -- : master process ready
+I, [2016-07-08T02:32:15.044040 #17292]  INFO -- : worker=2 ready
+I, [2016-07-08T02:32:15.044893 #17295]  INFO -- : worker=3 ready
