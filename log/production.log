@@ -1659,3 +1659,32 @@ I, [2016-07-08T11:57:12.684857 #17558]  INFO -- : Started GET "/assets/5-bfa0600
 I, [2016-07-08T11:57:12.693634 #17558]  INFO -- : Started GET "/assets/KoPubDotumLight-52b727b2ab4ea32aff44806fe0883da6e0e7ad3901a77e844a9ab3b24395c5bb.ttf" for ::1 at 2016-07-08 11:57:12 +0900
 I, [2016-07-08T11:57:12.702157 #17558]  INFO -- : Started GET "/assets/application-ea0344051bff9064f1b5d08a445b5a45f1558fc8c36eb838c54a45fdb2adbd69.css" for ::1 at 2016-07-08 11:57:12 +0900
 I, [2016-07-08T11:57:12.708588 #17558]  INFO -- : Started GET "/assets/KoPubDotumMedium-ce44902b96ff9056c3718c6f5324ea6719409886cf1b30413ea896044904ba40.ttf" for ::1 at 2016-07-08 11:57:12 +0900
+I, [2016-07-08T12:28:33.919246 #17673]  INFO -- : Started GET "/landing/home" for ::1 at 2016-07-08 12:28:33 +0900
+I, [2016-07-08T12:28:34.492683 #17673]  INFO -- : Processing by HighVoltage::PagesController#show as HTML
+I, [2016-07-08T12:28:34.492790 #17673]  INFO -- :   Parameters: {"id"=>"home"}
+I, [2016-07-08T12:28:34.515826 #17673]  INFO -- :   Rendered landing/home/_head.html.erb (2.8ms)
+I, [2016-07-08T12:28:34.518507 #17673]  INFO -- :   Rendered landing/home/_main.html.erb (0.9ms)
+I, [2016-07-08T12:28:34.521101 #17673]  INFO -- :   Rendered landing/home/_screenshot_desc.html.erb (0.5ms)
+I, [2016-07-08T12:28:34.523093 #17673]  INFO -- :   Rendered landing/home/_adver_desc.html.erb (0.4ms)
+I, [2016-07-08T12:28:34.525100 #17673]  INFO -- :   Rendered landing/home/_benefit_desc.html.erb (0.4ms)
+I, [2016-07-08T12:28:34.527227 #17673]  INFO -- :   Rendered landing/home/_realtime_desc.html.erb (0.4ms)
+I, [2016-07-08T12:28:34.530265 #17673]  INFO -- :   Rendered landing/home/_contact.html.erb (1.1ms)
+I, [2016-07-08T12:28:34.532832 #17673]  INFO -- :   Rendered landing/home/_footer.html.erb (0.4ms)
+I, [2016-07-08T12:28:34.532922 #17673]  INFO -- :   Rendered shared/_body.html.erb (21.7ms)
+I, [2016-07-08T12:28:34.532978 #17673]  INFO -- :   Rendered pages/home.html.erb within layouts/application (23.9ms)
+I, [2016-07-08T12:28:34.534101 #17673]  INFO -- : Completed 200 OK in 41ms (Views: 31.4ms | ActiveRecord: 0.0ms)
+I, [2016-07-08T12:28:34.699806 #17673]  INFO -- : Started GET "/landing/home" for ::1 at 2016-07-08 12:28:34 +0900
+I, [2016-07-08T12:28:34.706849 #17673]  INFO -- : Processing by HighVoltage::PagesController#show as HTML
+I, [2016-07-08T12:28:34.706910 #17673]  INFO -- :   Parameters: {"id"=>"home"}
+I, [2016-07-08T12:28:34.709250 #17673]  INFO -- :   Rendered landing/home/_head.html.erb (0.3ms)
+I, [2016-07-08T12:28:34.709847 #17673]  INFO -- :   Rendered landing/home/_main.html.erb (0.4ms)
+I, [2016-07-08T12:28:34.710091 #17673]  INFO -- :   Rendered landing/home/_screenshot_desc.html.erb (0.1ms)
+I, [2016-07-08T12:28:34.710294 #17673]  INFO -- :   Rendered landing/home/_adver_desc.html.erb (0.1ms)
+I, [2016-07-08T12:28:34.710514 #17673]  INFO -- :   Rendered landing/home/_benefit_desc.html.erb (0.1ms)
+I, [2016-07-08T12:28:34.710713 #17673]  INFO -- :   Rendered landing/home/_realtime_desc.html.erb (0.1ms)
+I, [2016-07-08T12:28:34.711187 #17673]  INFO -- :   Rendered landing/home/_contact.html.erb (0.4ms)
+I, [2016-07-08T12:28:34.711395 #17673]  INFO -- :   Rendered landing/home/_footer.html.erb (0.1ms)
+I, [2016-07-08T12:28:34.711498 #17673]  INFO -- :   Rendered shared/_body.html.erb (2.7ms)
+I, [2016-07-08T12:28:34.711564 #17673]  INFO -- :   Rendered pages/home.html.erb within layouts/application (2.9ms)
+I, [2016-07-08T12:28:34.712185 #17673]  INFO -- : Completed 200 OK in 5ms (Views: 3.8ms | ActiveRecord: 0.0ms)
+I, [2016-07-08T12:28:34.806278 #17673]  INFO -- : Started GET "/assets/7.png" for ::1 at 2016-07-08 12:28:34 +0900
