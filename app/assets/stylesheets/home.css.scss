@@ -88,8 +88,6 @@ $image_height: 365px;
 		    content : "";
 		    position: relative;
 		    height  : 50px;
-	    	margin-right: -50px;
-	    	margin-left: -50px;
 	    	border-bottom:1px solid #E6E7E7;
 		}
 
@@ -283,8 +281,7 @@ $image_height: 365px;
 		#header #header-icon {
 			margin-top: 15px;
 			margin-left: -15px;
-			min-width: 400px;
-			max-width: 400px;
+			/*min-width: 300px;*/
 		}
 
 		#footer #footer-icon {
