@@ -18,16 +18,10 @@ vendor/bundle
 /log/*.log
 /tmp
 
-<<<<<<< Updated upstream
 # Ignore assets files.
 /tmp/cache/assets/*
 /public/assets/*
 
-# Ignore all public/assets files.
-#/public/assets/*
-
-=======
->>>>>>> Stashed changes
 # Ignore other unneeded files.
 doc/
 *.swp
