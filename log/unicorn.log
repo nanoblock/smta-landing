@@ -99,3 +99,27 @@ I, [2016-07-08T05:28:12.890040 #21444]  INFO -- : worker=1 ready
 I, [2016-07-08T05:28:12.890770 #21439]  INFO -- : master process ready
 I, [2016-07-08T05:28:12.895880 #21447]  INFO -- : worker=2 ready
 I, [2016-07-08T05:28:12.896753 #21450]  INFO -- : worker=3 ready
+I, [2016-07-11T10:46:31.010108 #783]  INFO -- : Refreshing Gem list
+I, [2016-07-11T10:46:32.491347 #783]  INFO -- : unlinking existing socket=/var/www/showmetheapps/smta-landing/tmp/sockets/.unicorn.sock
+I, [2016-07-11T10:46:32.491971 #783]  INFO -- : listening on addr=/var/www/showmetheapps/smta-landing/tmp/sockets/.unicorn.sock fd=11
+I, [2016-07-11T10:46:32.565300 #786]  INFO -- : worker=0 ready
+I, [2016-07-11T10:46:32.566835 #788]  INFO -- : worker=1 ready
+I, [2016-07-11T10:46:32.567534 #783]  INFO -- : master process ready
+I, [2016-07-11T10:46:32.572526 #791]  INFO -- : worker=2 ready
+I, [2016-07-11T10:46:32.573366 #794]  INFO -- : worker=3 ready
+I, [2016-07-11T10:47:44.998096 #921]  INFO -- : Refreshing Gem list
+I, [2016-07-11T10:47:46.377258 #921]  INFO -- : unlinking existing socket=/var/www/showmetheapps/smta-landing/tmp/sockets/.unicorn.sock
+I, [2016-07-11T10:47:46.377384 #921]  INFO -- : listening on addr=/var/www/showmetheapps/smta-landing/tmp/sockets/.unicorn.sock fd=11
+I, [2016-07-11T10:47:46.442080 #924]  INFO -- : worker=0 ready
+I, [2016-07-11T10:47:46.443630 #926]  INFO -- : worker=1 ready
+I, [2016-07-11T10:47:46.444307 #921]  INFO -- : master process ready
+I, [2016-07-11T10:47:46.449394 #929]  INFO -- : worker=2 ready
+I, [2016-07-11T10:47:46.450283 #932]  INFO -- : worker=3 ready
+I, [2016-07-11T10:50:12.795084 #1051]  INFO -- : Refreshing Gem list
+I, [2016-07-11T10:50:14.125176 #1051]  INFO -- : unlinking existing socket=/var/www/showmetheapps/smta-landing/tmp/sockets/.unicorn.sock
+I, [2016-07-11T10:50:14.125300 #1051]  INFO -- : listening on addr=/var/www/showmetheapps/smta-landing/tmp/sockets/.unicorn.sock fd=11
+I, [2016-07-11T10:50:14.186600 #1054]  INFO -- : worker=0 ready
+I, [2016-07-11T10:50:14.188143 #1056]  INFO -- : worker=1 ready
+I, [2016-07-11T10:50:14.188914 #1051]  INFO -- : master process ready
+I, [2016-07-11T10:50:14.193834 #1059]  INFO -- : worker=2 ready
+I, [2016-07-11T10:50:14.194696 #1062]  INFO -- : worker=3 ready

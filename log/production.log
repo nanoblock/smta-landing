@@ -1,0 +1,168 @@
+I, [2016-07-11T10:46:40.878342 #794]  INFO -- : Started GET "/" for 14.35.26.94 at 2016-07-11 10:46:40 +0000
+I, [2016-07-11T10:46:40.934469 #794]  INFO -- : Processing by PagesController#show as HTML
+I, [2016-07-11T10:46:40.934551 #794]  INFO -- :   Parameters: {"id"=>"home"}
+I, [2016-07-11T10:46:40.957224 #794]  INFO -- :   Rendered landing/home/_head.html.erb (5.1ms)
+I, [2016-07-11T10:46:40.958660 #794]  INFO -- :   Rendered landing/home/_main.html.erb (0.9ms)
+I, [2016-07-11T10:46:40.959717 #794]  INFO -- :   Rendered landing/home/_screenshot_desc.html.erb (0.5ms)
+I, [2016-07-11T10:46:40.960735 #794]  INFO -- :   Rendered landing/home/_adver_desc.html.erb (0.4ms)
+I, [2016-07-11T10:46:40.961821 #794]  INFO -- :   Rendered landing/home/_benefit_desc.html.erb (0.4ms)
+I, [2016-07-11T10:46:40.962806 #794]  INFO -- :   Rendered landing/home/_realtime_desc.html.erb (0.4ms)
+I, [2016-07-11T10:46:40.964133 #794]  INFO -- :   Rendered landing/home/_contact.html.erb (0.8ms)
+I, [2016-07-11T10:46:40.965070 #794]  INFO -- :   Rendered landing/home/_footer.html.erb (0.3ms)
+I, [2016-07-11T10:46:40.965214 #794]  INFO -- :   Rendered shared/_body.html.erb (14.0ms)
+I, [2016-07-11T10:46:40.965275 #794]  INFO -- :   Rendered pages/home.html.erb within layouts/application (16.1ms)
+I, [2016-07-11T10:46:40.966397 #794]  INFO -- : Completed 200 OK in 32ms (Views: 22.6ms | ActiveRecord: 0.0ms)
+I, [2016-07-11T10:46:40.991293 #786]  INFO -- : Started GET "/assets/application-48fc607c9e53611d7363a13671891a82db4f8784627ccd76904036f8aba9194e.js" for 14.35.26.94 at 2016-07-11 10:46:40 +0000
+I, [2016-07-11T10:46:40.992530 #788]  INFO -- : Started GET "/assets/icon-ef202e0222f547aea30726b550847d3858685f8e7a654544a0d44f68bab36ec8.png" for 14.35.26.94 at 2016-07-11 10:46:40 +0000
+I, [2016-07-11T10:46:40.993449 #791]  INFO -- : Started GET "/assets/application-6a9fc5426d216d3bc5759520bfe5192a947c392787c04f7c82b977e1b1357aea.css" for 14.35.26.94 at 2016-07-11 10:46:40 +0000
+I, [2016-07-11T10:46:41.604784 #788]  INFO -- : Started GET "/assets/3-c69a313e7dd54fe5257bab22a82aa7ee053729719f9401f3d924a6f78e238bfa.png" for 14.35.26.94 at 2016-07-11 10:46:41 +0000
+I, [2016-07-11T10:46:41.615206 #788]  INFO -- : Started GET "/assets/4-6fb1f08d695b404022dd1448454d63299eacc707ae05104ef8c9fb5081645597.png" for 14.35.26.94 at 2016-07-11 10:46:41 +0000
+I, [2016-07-11T10:46:41.635947 #788]  INFO -- : Started GET "/assets/6-507e7caed08cce3e05654c58ca326ccf0ccfb5d504f1ae79a09a859dbebd816b.png" for 14.35.26.94 at 2016-07-11 10:46:41 +0000
+I, [2016-07-11T10:46:41.652907 #788]  INFO -- : Started GET "/assets/5-bfa06002e92f5f25f1fe34166b3724625661a35cb48060321d683e883e7a2992.png" for 14.35.26.94 at 2016-07-11 10:46:41 +0000
+F, [2016-07-11T10:46:43.854107 #791] FATAL -- : 
+ActionController::RoutingError (No route matches [GET] "/assets/application-6a9fc5426d216d3bc5759520bfe5192a947c392787c04f7c82b977e1b1357aea.css"):
+  actionpack (4.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.6) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.6) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.6) lib/rails/engine.rb:518:in `call'
+  railties (4.2.6) lib/rails/application.rb:165:in `call'
+  unicorn (5.1.0) lib/unicorn/http_server.rb:562:in `process_client'
+  unicorn (5.1.0) lib/unicorn/http_server.rb:658:in `worker_loop'
+  unicorn (5.1.0) lib/unicorn/http_server.rb:508:in `spawn_missing_workers'
+  unicorn (5.1.0) lib/unicorn/http_server.rb:132:in `start'
+  unicorn (5.1.0) bin/unicorn_rails:209:in `<top (required)>'
+  /home/ec2-user/.rbenv/versions/2.3.1/bin/unicorn_rails:23:in `load'
+  /home/ec2-user/.rbenv/versions/2.3.1/bin/unicorn_rails:23:in `<main>'
+
+
+F, [2016-07-11T10:46:45.258808 #786] FATAL -- : 
+ActionController::RoutingError (No route matches [GET] "/assets/application-48fc607c9e53611d7363a13671891a82db4f8784627ccd76904036f8aba9194e.js"):
+  actionpack (4.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.6) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.6) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.6) lib/rails/engine.rb:518:in `call'
+  railties (4.2.6) lib/rails/application.rb:165:in `call'
+  unicorn (5.1.0) lib/unicorn/http_server.rb:562:in `process_client'
+  unicorn (5.1.0) lib/unicorn/http_server.rb:658:in `worker_loop'
+  unicorn (5.1.0) lib/unicorn/http_server.rb:508:in `spawn_missing_workers'
+  unicorn (5.1.0) lib/unicorn/http_server.rb:132:in `start'
+  unicorn (5.1.0) bin/unicorn_rails:209:in `<top (required)>'
+  /home/ec2-user/.rbenv/versions/2.3.1/bin/unicorn_rails:23:in `load'
+  /home/ec2-user/.rbenv/versions/2.3.1/bin/unicorn_rails:23:in `<main>'
+
+
+I, [2016-07-11T10:47:57.979968 #932]  INFO -- : Started GET "/" for 14.35.26.94 at 2016-07-11 10:47:57 +0000
+I, [2016-07-11T10:47:58.036583 #932]  INFO -- : Processing by PagesController#show as HTML
+I, [2016-07-11T10:47:58.036660 #932]  INFO -- :   Parameters: {"id"=>"home"}
+I, [2016-07-11T10:47:58.056482 #932]  INFO -- :   Rendered landing/home/_head.html.erb (3.3ms)
+I, [2016-07-11T10:47:58.058135 #932]  INFO -- :   Rendered landing/home/_main.html.erb (1.1ms)
+I, [2016-07-11T10:47:58.059251 #932]  INFO -- :   Rendered landing/home/_screenshot_desc.html.erb (0.5ms)
+I, [2016-07-11T10:47:58.060332 #932]  INFO -- :   Rendered landing/home/_adver_desc.html.erb (0.5ms)
+I, [2016-07-11T10:47:58.061328 #932]  INFO -- :   Rendered landing/home/_benefit_desc.html.erb (0.4ms)
+I, [2016-07-11T10:47:58.062373 #932]  INFO -- :   Rendered landing/home/_realtime_desc.html.erb (0.4ms)
+I, [2016-07-11T10:47:58.063776 #932]  INFO -- :   Rendered landing/home/_contact.html.erb (0.8ms)
+I, [2016-07-11T10:47:58.064748 #932]  INFO -- :   Rendered landing/home/_footer.html.erb (0.4ms)
+I, [2016-07-11T10:47:58.064832 #932]  INFO -- :   Rendered shared/_body.html.erb (12.6ms)
+I, [2016-07-11T10:47:58.064896 #932]  INFO -- :   Rendered pages/home.html.erb within layouts/application (14.0ms)
+I, [2016-07-11T10:47:58.066213 #932]  INFO -- : Completed 200 OK in 29ms (Views: 19.9ms | ActiveRecord: 0.0ms)
+I, [2016-07-11T10:47:58.091984 #926]  INFO -- : Started GET "/assets/icon-ef202e0222f547aea30726b550847d3858685f8e7a654544a0d44f68bab36ec8.png" for 14.35.26.94 at 2016-07-11 10:47:58 +0000
+I, [2016-07-11T10:47:58.093223 #924]  INFO -- : Started GET "/assets/application-6a9fc5426d216d3bc5759520bfe5192a947c392787c04f7c82b977e1b1357aea.css" for 14.35.26.94 at 2016-07-11 10:47:58 +0000
+I, [2016-07-11T10:47:58.094466 #929]  INFO -- : Started GET "/assets/application-48fc607c9e53611d7363a13671891a82db4f8784627ccd76904036f8aba9194e.js" for 14.35.26.94 at 2016-07-11 10:47:58 +0000
+F, [2016-07-11T10:47:58.695118 #924] FATAL -- : 
+ActionController::RoutingError (No route matches [GET] "/assets/application-6a9fc5426d216d3bc5759520bfe5192a947c392787c04f7c82b977e1b1357aea.css"):
+  actionpack (4.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.6) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.6) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.6) lib/rails/engine.rb:518:in `call'
+  railties (4.2.6) lib/rails/application.rb:165:in `call'
+  unicorn (5.1.0) lib/unicorn/http_server.rb:562:in `process_client'
+  unicorn (5.1.0) lib/unicorn/http_server.rb:658:in `worker_loop'
+  unicorn (5.1.0) lib/unicorn/http_server.rb:508:in `spawn_missing_workers'
+  unicorn (5.1.0) lib/unicorn/http_server.rb:132:in `start'
+  unicorn (5.1.0) bin/unicorn_rails:209:in `<top (required)>'
+  /home/ec2-user/.rbenv/versions/2.3.1/bin/unicorn_rails:23:in `load'
+  /home/ec2-user/.rbenv/versions/2.3.1/bin/unicorn_rails:23:in `<main>'
+
+
+F, [2016-07-11T10:47:58.774664 #929] FATAL -- : 
+ActionController::RoutingError (No route matches [GET] "/assets/application-48fc607c9e53611d7363a13671891a82db4f8784627ccd76904036f8aba9194e.js"):
+  actionpack (4.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.6) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.6) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.6) lib/rails/engine.rb:518:in `call'
+  railties (4.2.6) lib/rails/application.rb:165:in `call'
+  unicorn (5.1.0) lib/unicorn/http_server.rb:562:in `process_client'
+  unicorn (5.1.0) lib/unicorn/http_server.rb:658:in `worker_loop'
+  unicorn (5.1.0) lib/unicorn/http_server.rb:508:in `spawn_missing_workers'
+  unicorn (5.1.0) lib/unicorn/http_server.rb:132:in `start'
+  unicorn (5.1.0) bin/unicorn_rails:209:in `<top (required)>'
+  /home/ec2-user/.rbenv/versions/2.3.1/bin/unicorn_rails:23:in `load'
+  /home/ec2-user/.rbenv/versions/2.3.1/bin/unicorn_rails:23:in `<main>'
+
+
+I, [2016-07-11T10:47:58.887563 #924]  INFO -- : Started GET "/assets/3-c69a313e7dd54fe5257bab22a82aa7ee053729719f9401f3d924a6f78e238bfa.png" for 14.35.26.94 at 2016-07-11 10:47:58 +0000
+I, [2016-07-11T10:47:58.888229 #932]  INFO -- : Started GET "/assets/4-6fb1f08d695b404022dd1448454d63299eacc707ae05104ef8c9fb5081645597.png" for 14.35.26.94 at 2016-07-11 10:47:58 +0000
+I, [2016-07-11T10:47:58.890247 #926]  INFO -- : Started GET "/assets/6-507e7caed08cce3e05654c58ca326ccf0ccfb5d504f1ae79a09a859dbebd816b.png" for 14.35.26.94 at 2016-07-11 10:47:58 +0000
+I, [2016-07-11T10:47:58.893661 #926]  INFO -- : Started GET "/assets/5-bfa06002e92f5f25f1fe34166b3724625661a35cb48060321d683e883e7a2992.png" for 14.35.26.94 at 2016-07-11 10:47:58 +0000
+I, [2016-07-11T10:50:24.820365 #1062]  INFO -- : Started GET "/" for 14.35.26.94 at 2016-07-11 10:50:24 +0000
+I, [2016-07-11T10:50:24.876190 #1062]  INFO -- : Processing by PagesController#show as HTML
+I, [2016-07-11T10:50:24.876254 #1062]  INFO -- :   Parameters: {"id"=>"home"}
+I, [2016-07-11T10:50:24.895721 #1062]  INFO -- :   Rendered landing/home/_head.html.erb (3.2ms)
+I, [2016-07-11T10:50:24.897349 #1062]  INFO -- :   Rendered landing/home/_main.html.erb (1.0ms)
+I, [2016-07-11T10:50:24.898461 #1062]  INFO -- :   Rendered landing/home/_screenshot_desc.html.erb (0.5ms)
+I, [2016-07-11T10:50:24.899509 #1062]  INFO -- :   Rendered landing/home/_adver_desc.html.erb (0.4ms)
+I, [2016-07-11T10:50:24.900488 #1062]  INFO -- :   Rendered landing/home/_benefit_desc.html.erb (0.4ms)
+I, [2016-07-11T10:50:24.901571 #1062]  INFO -- :   Rendered landing/home/_realtime_desc.html.erb (0.4ms)
+I, [2016-07-11T10:50:24.903000 #1062]  INFO -- :   Rendered landing/home/_contact.html.erb (0.9ms)
+I, [2016-07-11T10:50:24.903953 #1062]  INFO -- :   Rendered landing/home/_footer.html.erb (0.4ms)
+I, [2016-07-11T10:50:24.904048 #1062]  INFO -- :   Rendered shared/_body.html.erb (12.4ms)
+I, [2016-07-11T10:50:24.904151 #1062]  INFO -- :   Rendered pages/home.html.erb within layouts/application (13.8ms)
+I, [2016-07-11T10:50:24.905422 #1062]  INFO -- : Completed 200 OK in 29ms (Views: 19.7ms | ActiveRecord: 0.0ms)
+I, [2016-07-11T10:50:24.930048 #1054]  INFO -- : Started GET "/assets/application-f728040376d48c18356a1f23e484ef30574b4ae6308a9c4e415771f3336fb274.js" for 14.35.26.94 at 2016-07-11 10:50:24 +0000
+I, [2016-07-11T10:50:24.931316 #1056]  INFO -- : Started GET "/assets/icon-ef202e0222f547aea30726b550847d3858685f8e7a654544a0d44f68bab36ec8.png" for 14.35.26.94 at 2016-07-11 10:50:24 +0000
+I, [2016-07-11T10:50:24.932463 #1059]  INFO -- : Started GET "/assets/application-6a3bcbff1fcc97c3348d44ce158c75d1fe8876e42efe1b9cf6670335b815407a.css" for 14.35.26.94 at 2016-07-11 10:50:24 +0000
+I, [2016-07-11T10:50:25.515435 #1059]  INFO -- : Started GET "/assets/3-c69a313e7dd54fe5257bab22a82aa7ee053729719f9401f3d924a6f78e238bfa.png" for 14.35.26.94 at 2016-07-11 10:50:25 +0000
+I, [2016-07-11T10:50:25.533564 #1059]  INFO -- : Started GET "/assets/4-6fb1f08d695b404022dd1448454d63299eacc707ae05104ef8c9fb5081645597.png" for 14.35.26.94 at 2016-07-11 10:50:25 +0000
+I, [2016-07-11T10:50:25.558576 #1059]  INFO -- : Started GET "/assets/6-507e7caed08cce3e05654c58ca326ccf0ccfb5d504f1ae79a09a859dbebd816b.png" for 14.35.26.94 at 2016-07-11 10:50:25 +0000
+I, [2016-07-11T10:50:25.587125 #1059]  INFO -- : Started GET "/assets/5-bfa06002e92f5f25f1fe34166b3724625661a35cb48060321d683e883e7a2992.png" for 14.35.26.94 at 2016-07-11 10:50:25 +0000
+I, [2016-07-11T10:50:25.658565 #1059]  INFO -- : Started GET "/assets/2.png" for 14.35.26.94 at 2016-07-11 10:50:25 +0000
