@@ -6,7 +6,7 @@
 		<!-- <div class="col-md-offset-3 col-md-6" style="width: 100%; background-color: gray;"> -->
 			<%= form_tag( '/contact', {method: "post", id: "contact", class: "form-inline form-group", style: "text-align: center"}) do %> 
 			
-			<%= text_field_tag :email, '',{class: 'input-group form-control', placeholder: '@', tabindex: '1', :required => "autofocus"} %>
+			<%= text_field_tag :email, '',{class: 'input-group form-control', placeholder: '@메일주소를 남겨주세요.', tabindex: '1', :required => "autofocus"} %>
 			
 
 			<button name="submit" type="submit" id="contact-submit" data-submit="...Sending" onClick="<%= analytics_track_event "Mail", "Send", "Contact Section" %>">무료신청</button>
@@ -26,8 +26,9 @@
 
 		<!-- </div> -->
 	</div>
-	<h4 class="text-center" id="contact-container-text02">메일주소를 남겨주시면 무료로 등록해 드립니다.
-	<strong>2016.08월까지!</strong></h4>
+	<h4 class="text-center" id="contact-container-text02">8월까지 신청하시는 분들은 무료광고 해드립니다
+	<!-- <strong>2016.08월까지!</strong> -->
+	</h4>
 	</div>
 </div>
 
