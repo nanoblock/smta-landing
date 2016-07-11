@@ -25,6 +25,7 @@ $image_height: 365px;
 				common
 ========================================
 */
+
 	.container {
 		margin-right: auto;
 		margin-left: auto;
@@ -43,9 +44,14 @@ $image_height: 365px;
 
 	input {
 		font: 500 12px/16px "Kopub-Light", Helvetica, Arial, sans-serif;
-		font-size: 13pt;
+		font-size: 19.5px;
+		text-align: center;
 		background-color: #E6E6E6;
 	}
+
+	/*:placeholder-shown {
+		text-align: center;
+	}*/
 
 	button[type="submit"] {
 		font-family: 'Kopub-Light';
@@ -61,7 +67,7 @@ $image_height: 365px;
 		border: 1px solid $button_color;
 	}
 
-	button[type="submit"]:hover {
+	button[type="submit"]:hover, button[type="submit"]:active {
 		background-color: #FFF;
 		color: $button_color;
 	}
@@ -97,31 +103,43 @@ $image_height: 365px;
 		}
 
 		#main-container .container {
-			background-image:url("7.png");
+			background-image:url("");
 		}
 
 		#main-container h1 {
-			text-align: center;
+			font-size: 54px;
+			margin-top: 0px;
+			line-height: 64.8px;
+			letter-spacing: 97%;
 		}
 
 		#main-container h3 {
-			text-align: center;
-			padding-top: 15px;
+			font-size: 29px;
+			margin-top: 15px;
+		}
+
+		#main-container #text03{
+			margin-top: -10px;
+		}
+
+		#main-container h3 #text03 {
+			padding-top: 5px;
 		}
 
 		#main-container h4 {
-			text-align: center;
-			padding-top: 20px;
+			font-size: 19.5px;
+			padding-top: 15px;
 		}
-		
+
 		#main-container input {
-			font-size: 1.875em;
+			font-size: 19.5px;
 			margin-top: 15px;
 			max-width: 380px;
 			min-height: 52px;
 			padding: 10px;
 			background-color: #E6E6E6;
 		}
+
 
 		#header button[type="submit"] {
 			font-size: 1.25em;
@@ -132,12 +150,12 @@ $image_height: 365px;
 
 		#main-container button[type="submit"]{
 			margin-top: -5px;
-			margin-left: 5px;
-			min-width: 360px;
+			margin-left: 270px;
+			min-width: 100px;
 		}
 
 		#contact-container input {
-			font-size: 1.875em;
+			font-size: 19.5px;
 			margin-top: 15px;
 			margin-bottom: 15px;
 			margin-left: 10px;
@@ -279,6 +297,7 @@ $image_height: 365px;
 			float: center;
 		}
 
+
 		#header #header-icon {
 			margin-top: 15px;
 			margin-left: -15px;
@@ -382,6 +401,7 @@ $image_height: 365px;
 			max-width: 350px;
 			padding-top: 20px;
 			padding-bottom: 20px;
+			background-color: #E6E6E6;
 			/*margin-left: 110px;*/
 			/*margin-left: -50px;*/
 		}
@@ -558,9 +578,8 @@ $image_height: 365px;
 
 		#footer #footer-icon {
 			padding-top: 18px;
-			min-width: 320px;
 			margin-left: 0px;
-			max-width: 320px;
+
 		}
 
 		#footer #text01 {
@@ -569,244 +588,6 @@ $image_height: 365px;
 
 
 	}
-
-	/*@media screen and (min-width: 992px) and (min-width: 1200px) {
-		.container {
-			background-color: coral;
-			width: 1032px; 
-		}
-
-		.bolder-bottom:after {
-			display:block;
-	    	clear:both;
-	    	content : "";
-	    	position: relative;
-	    	height  : 50px;
-	    	margin-right: 70px;
-	    	
-	    	border-bottom:1px solid #E6E7E7;
-		}
-		
-		#main-container .container {
-			background-image:url("2.png");
-		}
-
-		#main-container h1 {
-			font-size: 4.063em;
-			margin-left: $padding_container_left;
-			padding-top: 20px;
-		}
-
-		#main-container h3 {
-			font-size: 2.188em;
-			padding-top: 25px;
-			padding-left: $padding_container_left;
-		}
-
-		#main-container h4 {
-			font-size: 1.438em;
-			padding-left: $padding_container_left;
-			padding-top: 20px;
-		}
-
-		#main-container input {
-			font-size: 1.875em;
-			margin-top: 15px;
-			margin-left: 0px;
-			min-width: 380px;
-			min-height: 52px;
-			padding: 10px;
-			background-color: #E6E6E6;
-		}
-
-		#header button[type="submit"] {
-			margin-top: 7px;
-			width: 120px;
-			height: 40px;
-		}
-
-		#main-container button[type="submit"]{
-			margin-top: 15px;
-			margin-left: 250px;
-			width: 132px;
-			height: 40px;
-		}
-
-		#contact-container input {
-			font-size: 1.875em;
-			min-width: 380px;
-			padding-top: 20px;
-			padding-bottom: 20px;
-			background-color: #E6E6E6;
-		}
-
-		#contact-container button[type="submit"]{
-			width: 132px;
-			height: 40px;
-			margin-left: 20px;
-			-webkit-transform: translateY(10%);
-			-ms-transform: translateY(10%);
-			-o-transform: translateY(10%);
-			transform: translateY(10%)
-		}
-
-		#screenshot-desc-container h1 {
-			font-size: 2.188em;
-		}
-
-		#screenshot-desc-container h3 {
-			font-size: 1.5em;
-		}
-
-		#adver-desc-container h1,
-		#experience-desc-container h1 {
-			font-size: 2.188em;
-			margin-right: $padding_container_right;
-		}
-
-		#contact-container h1 {
-			font-size: 2.188em;
-			padding-left: $padding_container_left;
-		}
-
-		#contact-container h4 {
-			font-size: 1.5em;
-		}
-
-		#adver-desc-container h3,
-		#experience-desc-container h3 {
-			font-size: 1.5em;
-			margin-right: $padding_container_right;
-		}
-
-		#benefit-desc-container h1 {
-			font-size: 2.188em;
-			margin-right: $padding_container_right;
-		}
-
-		#benefit-desc-container h3 {
-			font-size: 1.5em;
-			margin-top: 30px;
-		}
-
-		#footer h1 {
-			font-size: 2.125em;
-			padding-right: $padding_container_right;
-		}
-
-		#screenshot-desc-container #screenshot-desc-container-text01 {
-			padding-top: 182px;
-		}
-		
-		#screenshot-desc-container #screenshot-desc-container-text02 {
-			margin-top: -5px;
-		}
-
-		#screenshot-desc-container #screenshot-desc-container-text03{
-			margin-top: -5px;
-		}
-
-		#screenshot-desc-container #screenshot-desc-container-text04 {
-			margin-top: 30px;
-		}
-
-		#screenshot-desc-container #screenshot-desc-container-text05 {
-			margin-top: -5px;
-		}
-
-		#adver-desc-container #adver-desc-container-text01,
-		#experience-desc-container #experience-text01 {
-			padding-top: 182px;
-		}
-
-		#adver-desc-container #adver-desc-container-text02,
-		#experience-desc-container #experience-text02 {
-			margin-top: -5px;
-			margin-left: -120px;
-		}
-
-		#adver-desc-container #adver-desc-container-text03,
-		#experience-desc-container #experience-text03 {
-			margin-top: 30px;
-			margin-right: $padding_container_right;
-		}
-
-		#adver-desc-container #adver-desc-container-text04,
-		#experience-desc-container #experience-text04 {
-			margin-top: -5px;
-			margin-left: -120px;
-		}
-
-		#adver-desc-container #adver-desc-container-text05{
-			margin-right: $padding_container_right;
-			margin-top: -5px;
-			color: #999999;
-		}
-
-		#benefit-desc-container #benefit-desc-container-text01 {
-			padding-top: 170px;
-		}
-
-		#benefit-desc-container #benefit-desc-container-text02,
-		#benefit-desc-container #benefit-desc-container-text03 {
-			margin-top: -5px;
-		}
-
-		
-		#benefit-desc-container #benefit-desc-container-text04 {
-			margin-top: 30px;
-		}
-		
-		#benefit-desc-container #benefit-desc-container-text05 {
-			margin-top: -5px;
-		}
-
-		#contact-container #contact-container-text01{
-			padding-top: 200px;
-			padding-bottom: 30px;
-		}
-		
-		#contact-container #contact-container-text02 {
-			padding-bottom: 100px;
-		}
-
-		#screenshot-desc-container img {
-			margin-top: 125px;
-			min-width: $image_width;
-			float: right;
-			margin-right: 100px;
-		}
-
-		#adver-desc-container img,
-		#experience-desc-container img {
-			padding-top: 100px;
-			float: center;
-			min-width: $image_width;
-		}
-
-		#benefit-desc-container img {
-			padding-top: 100px;
-			float: right;
-			min-width: $image_width;
-			min-height: $image_height;
-			margin-right: 100px;
-		}
-
-		#header #header-icon {
-			margin-left: $padding_container_left;
-			margin-top: 13px;
-			min-width: 420px;
-			max-width: 420px;
-		}
-
-		#footer #footer-icon {
-			padding-top: 13px;
-			min-width: 420px;
-			max-width: 420px;
-		}
-
-
-	}*/
 
 /*	
 ========================================
