@@ -16,6 +16,13 @@
 </div>
 
 <script>
+if ($(window).width() < 768) {
+      $("#experience-text03").html("화면캡처에서 클릭(터치)이<br>가능한 부분을 설정해주세요.");
+      $("#experience-text04").html("유저들의 App의 체험에 대한 만족은<br>App설치로 이어집니다.");
+    } else {
+      $("#experience-text03").html("화면캡처에서 클릭(터치)이 가능한 부분을 설정해주세요.");
+      $("#experience-text04").html("유저들의 App의 체험에 대한 만족은 App설치로 이어집니다.");
+    }
   $(window).resize(function() {
     if ($(window).width() < 768) {
       $("#experience-text03").html("화면캡처에서 클릭(터치)이<br>가능한 부분을 설정해주세요.");

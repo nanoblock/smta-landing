@@ -1,34 +1,34 @@
 <div id="benefit-desc-container" class="section">
 	<div class="container  bolder-bottom">
 		<div class="row">
-			<div class="col-sm-6  col-sm-push-6" id="row-left">
+			<div class="col-sm-push-6" id="row-left">
 				<%= image_tag('6.png', class: "img-responsive") %>
 			</div>
-			<div class="col-sm-6  col-sm-pull-6" id="row-right">
+			<div class="col-sm-pull-6" id="row-right">
 				
 				<h1 class="text-left" id="benefit-desc-container-text01">화면캡처가 많을수록 상위노출</h1>
 				<h1 class="text-left" id="benefit-desc-container-text02"><strong>#검색결과</strong> 상위에 노출됩니다.</h1>
 				<h1 class="text-left" id="benefit-desc-container-text03">캡처만으로 <strong>#상위(TOP)</strong>를 차지하세요!</h1>
 				<!-- <h1 class="text-left">정직하게 경쟁자를 앞지르세요.</h1> -->
 				<h3 class="text-left" id="benefit-desc-container-text04">마케팅에 대한 고민은 안하셔도 됩니다.</h3>
-				<h3 class="text-left" id="benefit-desc-container-text05"> 쇼미더앱스. 그리고 하루에 10초(10장)이면 충분합니다.</h3>
+				<h3 class="text-left" id="benefit-desc-container-text05"></h3>
 			</div>
 		</div>
 	</div>
 </div>
 
-<!-- <div id="benefit-desc-wrap" class="container">
-	<div class=row>
-	    <div id="row-left" class="col-md-6 col-sm-12">
-	      <h1>스크린샷이 많을수록 상위노출</h1>
-	      <h1>정직하게 <strong>경쟁자를</strong> 앞지르세요.</h1>
-	      <br>
-	      <h4>복잡한 광고전략은 이제 그만!<br>
-	      	하루에 10장이면 충분합니다.</h4>
-		</div>
-
-	    <div id="row-right" class="col-md-6 col-sm-12">
-	        image_tag('landing_desc_02.png') 
-	    </div>
-	</div>
-</div> -->
+<script>
+  if ($(window).width() < 768) {
+      $("#benefit-desc-container-text05").html("쇼미더앱스. 그리고 하루에 10초(10장)이면<br>충분합니다.");
+    } else {
+      $("#benefit-desc-container-text05").html("쇼미더앱스. 그리고 하루에 10초(10장)이면 충분합니다.");
+    }
+  $(window).resize(function() {
+    if ($(window).width() < 768) {
+      $("#benefit-desc-container-text05").html("쇼미더앱스. 그리고 하루에 10초(10장)이면<br>충분합니다.");
+    } else {
+      $("#benefit-desc-container-text05").html("쇼미더앱스. 그리고 하루에 10초(10장)이면 충분합니다.");
+    }
+  });
+  
+</script>
