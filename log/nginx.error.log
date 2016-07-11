@@ -1,2 +1,0 @@
-2016/07/07 15:35:14 [error] 15591#0: *17 open() "/var/www/showmetheapps/smta-landing/index.html" failed (2: No such file or directory), client: 14.35.26.94, server: , request: "GET /index.html HTTP/1.1", host: "ec2-52-78-62-33.ap-northeast-2.compute.amazonaws.com"
-2016/07/07 15:35:16 [error] 15591#0: *17 open() "/var/www/showmetheapps/smta-landing/index.html" failed (2: No such file or directory), client: 14.35.26.94, server: , request: "GET /index.html HTTP/1.1", host: "ec2-52-78-62-33.ap-northeast-2.compute.amazonaws.com"

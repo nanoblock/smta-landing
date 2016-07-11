@@ -91,3 +91,11 @@ I, [2016-07-08T03:46:05.685674 #20814]  INFO -- : master process ready
 I, [2016-07-08T03:46:05.689109 #20819]  INFO -- : worker=1 ready
 I, [2016-07-08T03:46:05.691022 #20822]  INFO -- : worker=2 ready
 I, [2016-07-08T03:46:05.691905 #20825]  INFO -- : worker=3 ready
+I, [2016-07-08T05:28:11.451373 #21439]  INFO -- : Refreshing Gem list
+I, [2016-07-08T05:28:12.828307 #21439]  INFO -- : unlinking existing socket=/var/www/showmetheapps/smta-landing/tmp/sockets/.unicorn.sock
+I, [2016-07-08T05:28:12.828470 #21439]  INFO -- : listening on addr=/var/www/showmetheapps/smta-landing/tmp/sockets/.unicorn.sock fd=11
+I, [2016-07-08T05:28:12.888325 #21442]  INFO -- : worker=0 ready
+I, [2016-07-08T05:28:12.890040 #21444]  INFO -- : worker=1 ready
+I, [2016-07-08T05:28:12.890770 #21439]  INFO -- : master process ready
+I, [2016-07-08T05:28:12.895880 #21447]  INFO -- : worker=2 ready
+I, [2016-07-08T05:28:12.896753 #21450]  INFO -- : worker=3 ready
