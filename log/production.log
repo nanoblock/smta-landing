@@ -166,3 +166,25 @@ I, [2016-07-11T10:50:25.533564 #1059]  INFO -- : Started GET "/assets/4-6fb1f08d
 I, [2016-07-11T10:50:25.558576 #1059]  INFO -- : Started GET "/assets/6-507e7caed08cce3e05654c58ca326ccf0ccfb5d504f1ae79a09a859dbebd816b.png" for 14.35.26.94 at 2016-07-11 10:50:25 +0000
 I, [2016-07-11T10:50:25.587125 #1059]  INFO -- : Started GET "/assets/5-bfa06002e92f5f25f1fe34166b3724625661a35cb48060321d683e883e7a2992.png" for 14.35.26.94 at 2016-07-11 10:50:25 +0000
 I, [2016-07-11T10:50:25.658565 #1059]  INFO -- : Started GET "/assets/2.png" for 14.35.26.94 at 2016-07-11 10:50:25 +0000
+I, [2016-07-11T11:01:38.611567 #1059]  INFO -- : Started GET "/" for 14.35.26.94 at 2016-07-11 11:01:38 +0000
+I, [2016-07-11T11:01:38.614155 #1059]  INFO -- : Processing by PagesController#show as HTML
+I, [2016-07-11T11:01:38.614199 #1059]  INFO -- :   Parameters: {"id"=>"home"}
+I, [2016-07-11T11:01:38.630155 #1059]  INFO -- :   Rendered landing/home/_head.html.erb (2.8ms)
+I, [2016-07-11T11:01:38.631645 #1059]  INFO -- :   Rendered landing/home/_main.html.erb (0.9ms)
+I, [2016-07-11T11:01:38.632667 #1059]  INFO -- :   Rendered landing/home/_screenshot_desc.html.erb (0.4ms)
+I, [2016-07-11T11:01:38.633636 #1059]  INFO -- :   Rendered landing/home/_adver_desc.html.erb (0.4ms)
+I, [2016-07-11T11:01:38.634576 #1059]  INFO -- :   Rendered landing/home/_benefit_desc.html.erb (0.4ms)
+I, [2016-07-11T11:01:38.635571 #1059]  INFO -- :   Rendered landing/home/_realtime_desc.html.erb (0.4ms)
+I, [2016-07-11T11:01:38.636856 #1059]  INFO -- :   Rendered landing/home/_contact.html.erb (0.7ms)
+I, [2016-07-11T11:01:38.637821 #1059]  INFO -- :   Rendered landing/home/_footer.html.erb (0.3ms)
+I, [2016-07-11T11:01:38.637904 #1059]  INFO -- :   Rendered shared/_body.html.erb (11.3ms)
+I, [2016-07-11T11:01:38.637978 #1059]  INFO -- :   Rendered pages/home.html.erb within layouts/application (12.5ms)
+I, [2016-07-11T11:01:38.638951 #1059]  INFO -- : Completed 200 OK in 25ms (Views: 16.5ms | ActiveRecord: 0.0ms)
+I, [2016-07-11T11:01:38.658639 #1054]  INFO -- : Started GET "/assets/application-6a3bcbff1fcc97c3348d44ce158c75d1fe8876e42efe1b9cf6670335b815407a.css" for 14.35.26.94 at 2016-07-11 11:01:38 +0000
+I, [2016-07-11T11:01:38.659737 #1056]  INFO -- : Started GET "/assets/application-f728040376d48c18356a1f23e484ef30574b4ae6308a9c4e415771f3336fb274.js" for 14.35.26.94 at 2016-07-11 11:01:38 +0000
+I, [2016-07-11T11:01:38.661391 #1062]  INFO -- : Started GET "/assets/icon-ef202e0222f547aea30726b550847d3858685f8e7a654544a0d44f68bab36ec8.png" for 14.35.26.94 at 2016-07-11 11:01:38 +0000
+I, [2016-07-11T11:01:38.835145 #1056]  INFO -- : Started GET "/assets/3-c69a313e7dd54fe5257bab22a82aa7ee053729719f9401f3d924a6f78e238bfa.png" for 14.35.26.94 at 2016-07-11 11:01:38 +0000
+I, [2016-07-11T11:01:38.835689 #1054]  INFO -- : Started GET "/assets/4-6fb1f08d695b404022dd1448454d63299eacc707ae05104ef8c9fb5081645597.png" for 14.35.26.94 at 2016-07-11 11:01:38 +0000
+I, [2016-07-11T11:01:38.837451 #1059]  INFO -- : Started GET "/assets/6-507e7caed08cce3e05654c58ca326ccf0ccfb5d504f1ae79a09a859dbebd816b.png" for 14.35.26.94 at 2016-07-11 11:01:38 +0000
+I, [2016-07-11T11:01:38.839653 #1059]  INFO -- : Started GET "/assets/5-bfa06002e92f5f25f1fe34166b3724625661a35cb48060321d683e883e7a2992.png" for 14.35.26.94 at 2016-07-11 11:01:38 +0000
+I, [2016-07-11T11:01:38.888042 #1059]  INFO -- : Started GET "/assets/2.png" for 14.35.26.94 at 2016-07-11 11:01:38 +0000
