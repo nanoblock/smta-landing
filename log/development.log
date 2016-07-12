@@ -6646,3 +6646,86 @@ WHERE c.contype = 'f'
   AND t3.nspname = ANY (current_schemas(false))
 ORDER BY c.conname
 [0m
+  [1m[36m (7.7ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL) [0m
+  [1m[35m (1.4ms)[0m  CREATE UNIQUE INDEX  "unique_schema_migrations" ON "schema_migrations"  ("version")
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateContacts (20160707080131)
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (15.7ms)[0m  [1mCREATE TABLE "contacts" ("id" serial primary key, "email" character varying NOT NULL, "date" character varying NOT NULL) [0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20160707080131"]]
+  [1m[36m (6.3ms)[0m  [1mCOMMIT[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.2ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (2.3ms)[0m  [1mSELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'contacts'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+[0m
+
+
+Started POST "/contact" for ::1 at 2016-07-12 14:24:33 +0900
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ContactController#send as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"DfRcexOTt8sESMO3WFYGao6zjNoOAvA4+DJ4pnSvlgYgqzIhRY24jRP6zgop+u0msSPko8j5jCqXAoVFhStPWg==", "email"=>"taiyou88@naver.com", "submit"=>""}
+  [1m[35mContact Load (0.3ms)[0m  SELECT  "contacts".* FROM "contacts" WHERE "contacts"."email" = $1 LIMIT 1  [["email", "taiyou88@naver.com"]]
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "contacts" ("email", "date") VALUES ($1, $2) RETURNING "id"  [["email", "taiyou88@naver.com"], ["date", "07/12/2016"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/landing/home
+Completed 302 Found in 18ms (ActiveRecord: 3.4ms)
+
+
+Started GET "/landing/home" for ::1 at 2016-07-12 14:24:33 +0900
+Processing by HighVoltage::PagesController#show as HTML
+  Parameters: {"id"=>"home"}
+  Rendered landing/home/_head.html.erb (224.3ms)
+  Rendered landing/home/_main.html.erb (2.6ms)
+  Rendered landing/home/_screenshot_desc.html.erb (1.1ms)
+  Rendered landing/home/_adver_desc.html.erb (1.1ms)
+  Rendered landing/home/_benefit_desc.html.erb (1.9ms)
+  Rendered landing/home/_realtime_desc.html.erb (1.5ms)
+  Rendered landing/home/_contact.html.erb (1.0ms)
+  Rendered landing/home/_footer.html.erb (0.8ms)
+  Rendered shared/_body.html.erb (254.0ms)
+  Rendered pages/home.html.erb within layouts/application (257.9ms)
+Completed 200 OK in 345ms (Views: 336.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/2.png" for ::1 at 2016-07-12 14:24:34 +0900
+
+
+Started POST "/contact" for ::1 at 2016-07-12 14:26:21 +0900
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ContactController#send as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"8LiHpGa7Lp971ERAaGtxK9DfOX9z9N2g4j75VE2DAojd5+n+MKUh2WxmSf0Zx5pn709RBrUPobKNDgS3vAfb1A==", "email"=>"yongseok.jang@grep.services", "submit"=>""}
+  [1m[35mContact Load (0.3ms)[0m  SELECT  "contacts".* FROM "contacts" WHERE "contacts"."email" = $1 LIMIT 1  [["email", "yongseok.jang@grep.services"]]
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "contacts" ("email", "date") VALUES ($1, $2) RETURNING "id"  [["email", "yongseok.jang@grep.services"], ["date", "07/12/2016"]]
+  [1m[36m (2.1ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/landing/home
+Completed 302 Found in 21ms (ActiveRecord: 5.5ms)
+
+
+Started GET "/landing/home" for ::1 at 2016-07-12 14:26:22 +0900
+Processing by HighVoltage::PagesController#show as HTML
+  Parameters: {"id"=>"home"}
+  Rendered landing/home/_head.html.erb (236.9ms)
+  Rendered landing/home/_main.html.erb (1.9ms)
+  Rendered landing/home/_screenshot_desc.html.erb (1.2ms)
+  Rendered landing/home/_adver_desc.html.erb (1.2ms)
+  Rendered landing/home/_benefit_desc.html.erb (1.0ms)
+  Rendered landing/home/_realtime_desc.html.erb (1.4ms)
+  Rendered landing/home/_contact.html.erb (0.9ms)
+  Rendered landing/home/_footer.html.erb (0.6ms)
+  Rendered shared/_body.html.erb (261.2ms)
+  Rendered pages/home.html.erb within layouts/application (265.0ms)
+Completed 200 OK in 362ms (Views: 353.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/2.png" for ::1 at 2016-07-12 14:26:22 +0900
