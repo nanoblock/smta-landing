@@ -67,11 +67,6 @@ $image_height: 365px;
 		border: 1px solid $button_color;
 	}
 
-	button[type="submit"]:hover, button[type="submit"]:active {
-		background-color: #FFF;
-		color: $button_color;
-	}
-
 	button[type="submit"]:focus {
 		outline: none;
 	}
@@ -317,6 +312,11 @@ $image_height: 365px;
 		.container {
 			width: 760px; 
 			padding-left: 0px;
+		}
+
+		button[type="submit"]:hover, button[type="submit"]:active {
+			background-color: #FFF;
+			color: $button_color;
 		}
 
 		.bolder-bottom:after {
