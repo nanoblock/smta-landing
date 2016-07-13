@@ -1,9 +1,18 @@
 class ContactController < ApplicationController
 
 	def send(arg)
-		self.contact
+		contact
 		# SendMailer.contact(params[:email]).deliver_now
-		redirect_to(:back)
+		unless request.referer.nil?
+			begin
+				redirect_to(:back)
+			rescue ActionController::RedirectBackError
+				redirect_to root_path
+			end
+		else
+			render nothing: true, status: :ok
+		end
+		
 	end
 
 	def contact
@@ -21,5 +30,5 @@ class ContactController < ApplicationController
 			return false
 		end
 	end
-	#pulltest
+
 end

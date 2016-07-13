@@ -6,7 +6,7 @@ Rails.application.routes.draw do
   # get 'mail', to: 'mail#send'
   # post 'mail', to: 'mail#send'
 
-  get 'contact', to: 'contact#send'
-  post 'contact', to: 'contact#send'
+  get '/contact', to: 'contact#send'
+  post '/contact', to: 'contact#send'
 
 end
