@@ -1,0 +1,29 @@
+
+<div class="container">
+
+  <h1 class="text-center" id="complete-container-text01"></h1>
+  <h2 class="text-center" id="complete-container-text02"></h2>
+
+  <%= link_to image_tag('icon.png', { :border => '0', :alt => 'Home'}), root_path %>
+
+</div>
+
+<script>
+  if ($(window).width() < 768) {
+      $("#complete-container-text01").html("무료광고신청이 접수되었습니다!");
+      $("#complete-container-text02").html("정식서비스가 런칭되면 메일드리겠습니다.<br>감사합니다.");
+    } else {
+      $("#complete-container-text01").html("무료광고신청이 접수되었습니다!");
+      $("#complete-container-text02").html("정식서비스가 런칭되면 메일드리겠습니다. 감사합니다.");
+    }
+  $(window).resize(function() {
+    if ($(window).width() < 768) {
+      $("#complete-container-text01").html("무료광고신청이 접수되었습니다!");
+      $("#complete-container-text02").html("정식서비스가 런칭되면 메일드리겠습니다.<br>감사합니다.");
+    } else {
+      $("#complete-container-text01").html("무료광고신청이 접수되었습니다!");
+      $("#complete-container-text02").html("정식서비스가 런칭되면 메일드리겠습니다. 감사합니다.");
+    }
+  });
+</script>
+<!-- </div> -->

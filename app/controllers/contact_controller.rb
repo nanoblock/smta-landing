@@ -3,16 +3,17 @@ class ContactController < ApplicationController
 	def send(arg)
 		contact
 		# SendMailer.contact(params[:email]).deliver_now
-		unless request.referer.nil?
-			begin
-				redirect_to(:back)
-			rescue ActionController::RedirectBackError
-				redirect_to root_path
-			end
-		else
-			render nothing: true, status: :ok
+			# puts "COMECOMECOME"
+			# flash[:success] = "Thanks you!!!!!!!! I got your mail"
+		begin
+			return if request.referer.nil? 
+			redirect_to(:back)
+		rescue ActionController::RedirectBackError
+			
+
+			redirect_to root_path, notice: "SUCCESS!"
 		end
-		
+
 	end
 
 	def contact
