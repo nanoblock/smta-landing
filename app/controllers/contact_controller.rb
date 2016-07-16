@@ -7,10 +7,8 @@ class ContactController < ApplicationController
 			# flash[:success] = "Thanks you!!!!!!!! I got your mail"
 		begin
 			return if request.referer.nil? 
-			redirect_to(:back)
+			redirect_to '/landing/complete'
 		rescue ActionController::RedirectBackError
-			
-
 			redirect_to root_path, notice: "SUCCESS!"
 		end
 

@@ -55822,3 +55822,222 @@ Completed 200 OK in 70ms (Views: 68.4ms | ActiveRecord: 0.0ms)
 
 
 Started GET "/assets/2.png" for ::1 at 2016-07-17 02:03:33 +0900
+
+
+Started GET "/landing/home" for ::1 at 2016-07-17 02:20:02 +0900
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by HighVoltage::PagesController#show as HTML
+  Parameters: {"id"=>"home"}
+  Rendered landing/home/_head.html.erb (284.0ms)
+  Rendered landing/home/_main.html.erb (2.7ms)
+  Rendered landing/home/_screenshot_desc.html.erb (1.5ms)
+  Rendered landing/home/_adver_desc.html.erb (1.5ms)
+  Rendered landing/home/_benefit_desc.html.erb (1.5ms)
+  Rendered landing/home/_realtime_desc.html.erb (1.7ms)
+  Rendered landing/home/_contact.html.erb (1.0ms)
+  Rendered landing/home/_footer.html.erb (0.8ms)
+  Rendered shared/_body.html.erb (310.7ms)
+  Rendered pages/home.html.erb within layouts/application (319.9ms)
+Completed 200 OK in 440ms (Views: 430.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/2.png" for ::1 at 2016-07-17 02:20:03 +0900
+
+
+Started POST "/contact" for ::1 at 2016-07-17 02:20:09 +0900
+Processing by ContactController#send as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"OQhEA2qX/6B0lEydB0Vs45eMIoAKm5/0flechUABUXrr/ZqRDFRog+y+QExhhjKnVcc64b/Xrsf/qRAAiuzTwQ==", "email"=>"taiyou88@naver.com", "submit"=>""}
+  [1m[35mContact Load (24.7ms)[0m  SELECT  "contacts".* FROM "contacts" WHERE "contacts"."email" = $1 LIMIT 1  [["email", "taiyou88@naver.com"]]
+Redirected to 
+Completed 500 Internal Server Error in 88ms (ActiveRecord: 58.9ms)
+
+ActionController::UrlGenerationError (No route matches {:action=>"show", :controller=>"pages", :id=>"complete"}):
+  app/controllers/contact_controller.rb:10:in `send'
+
+
+  Rendered vendor/bundle/ruby/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.7ms)
+  Rendered vendor/bundle/ruby/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.6ms)
+  Rendered vendor/bundle/ruby/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered vendor/bundle/ruby/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (52.8ms)
+
+
+Started POST "/contact" for ::1 at 2016-07-17 02:21:27 +0900
+Processing by ContactController#send as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"OQhEA2qX/6B0lEydB0Vs45eMIoAKm5/0flechUABUXrr/ZqRDFRog+y+QExhhjKnVcc64b/Xrsf/qRAAiuzTwQ==", "email"=>"taiyou88@naver.com", "submit"=>""}
+  [1m[36mContact Load (0.2ms)[0m  [1mSELECT  "contacts".* FROM "contacts" WHERE "contacts"."email" = $1 LIMIT 1[0m  [["email", "taiyou88@naver.com"]]
+Redirected to http://localhost:3000landing/complete
+Completed 302 Found in 6ms (ActiveRecord: 1.5ms)
+
+
+Started POST "/contact" for ::1 at 2016-07-17 02:21:27 +0900
+Processing by ContactController#send as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"OQhEA2qX/6B0lEydB0Vs45eMIoAKm5/0flechUABUXrr/ZqRDFRog+y+QExhhjKnVcc64b/Xrsf/qRAAiuzTwQ==", "email"=>"taiyou88@naver.com", "submit"=>""}
+  [1m[35mContact Load (0.2ms)[0m  SELECT  "contacts".* FROM "contacts" WHERE "contacts"."email" = $1 LIMIT 1  [["email", "taiyou88@naver.com"]]
+Redirected to http://localhost:3000landing/complete
+Completed 302 Found in 1ms (ActiveRecord: 0.2ms)
+
+
+Started POST "/contact" for ::1 at 2016-07-17 02:21:27 +0900
+Processing by ContactController#send as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"OQhEA2qX/6B0lEydB0Vs45eMIoAKm5/0flechUABUXrr/ZqRDFRog+y+QExhhjKnVcc64b/Xrsf/qRAAiuzTwQ==", "email"=>"taiyou88@naver.com", "submit"=>""}
+  [1m[36mContact Load (0.3ms)[0m  [1mSELECT  "contacts".* FROM "contacts" WHERE "contacts"."email" = $1 LIMIT 1[0m  [["email", "taiyou88@naver.com"]]
+Redirected to http://localhost:3000landing/complete
+Completed 302 Found in 1ms (ActiveRecord: 0.3ms)
+
+
+Started POST "/contact" for ::1 at 2016-07-17 02:21:27 +0900
+Processing by ContactController#send as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"OQhEA2qX/6B0lEydB0Vs45eMIoAKm5/0flechUABUXrr/ZqRDFRog+y+QExhhjKnVcc64b/Xrsf/qRAAiuzTwQ==", "email"=>"taiyou88@naver.com", "submit"=>""}
+  [1m[35mContact Load (0.2ms)[0m  SELECT  "contacts".* FROM "contacts" WHERE "contacts"."email" = $1 LIMIT 1  [["email", "taiyou88@naver.com"]]
+Redirected to http://localhost:3000landing/complete
+Completed 302 Found in 1ms (ActiveRecord: 0.2ms)
+
+
+Started POST "/contact" for ::1 at 2016-07-17 02:21:27 +0900
+Processing by ContactController#send as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"OQhEA2qX/6B0lEydB0Vs45eMIoAKm5/0flechUABUXrr/ZqRDFRog+y+QExhhjKnVcc64b/Xrsf/qRAAiuzTwQ==", "email"=>"taiyou88@naver.com", "submit"=>""}
+  [1m[36mContact Load (0.2ms)[0m  [1mSELECT  "contacts".* FROM "contacts" WHERE "contacts"."email" = $1 LIMIT 1[0m  [["email", "taiyou88@naver.com"]]
+Redirected to http://localhost:3000landing/complete
+Completed 302 Found in 1ms (ActiveRecord: 0.2ms)
+
+
+Started POST "/contact" for ::1 at 2016-07-17 02:21:27 +0900
+Processing by ContactController#send as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"OQhEA2qX/6B0lEydB0Vs45eMIoAKm5/0flechUABUXrr/ZqRDFRog+y+QExhhjKnVcc64b/Xrsf/qRAAiuzTwQ==", "email"=>"taiyou88@naver.com", "submit"=>""}
+  [1m[35mContact Load (0.4ms)[0m  SELECT  "contacts".* FROM "contacts" WHERE "contacts"."email" = $1 LIMIT 1  [["email", "taiyou88@naver.com"]]
+Redirected to http://localhost:3000landing/complete
+Completed 302 Found in 1ms (ActiveRecord: 0.4ms)
+
+
+Started POST "/contact" for ::1 at 2016-07-17 02:21:27 +0900
+Processing by ContactController#send as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"OQhEA2qX/6B0lEydB0Vs45eMIoAKm5/0flechUABUXrr/ZqRDFRog+y+QExhhjKnVcc64b/Xrsf/qRAAiuzTwQ==", "email"=>"taiyou88@naver.com", "submit"=>""}
+  [1m[36mContact Load (0.1ms)[0m  [1mSELECT  "contacts".* FROM "contacts" WHERE "contacts"."email" = $1 LIMIT 1[0m  [["email", "taiyou88@naver.com"]]
+Redirected to http://localhost:3000landing/complete
+Completed 302 Found in 1ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/" for ::1 at 2016-07-17 02:21:33 +0900
+Processing by PagesController#show as HTML
+  Parameters: {"id"=>"home"}
+  Rendered landing/home/_head.html.erb (1.6ms)
+  Rendered landing/home/_main.html.erb (1.1ms)
+  Rendered landing/home/_screenshot_desc.html.erb (0.7ms)
+  Rendered landing/home/_adver_desc.html.erb (0.8ms)
+  Rendered landing/home/_benefit_desc.html.erb (0.8ms)
+  Rendered landing/home/_realtime_desc.html.erb (1.0ms)
+  Rendered landing/home/_contact.html.erb (0.6ms)
+  Rendered landing/home/_footer.html.erb (0.4ms)
+  Rendered shared/_body.html.erb (20.1ms)
+  Rendered pages/home.html.erb within layouts/application (21.5ms)
+Completed 200 OK in 78ms (Views: 76.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/2.png" for ::1 at 2016-07-17 02:21:33 +0900
+
+
+Started POST "/contact" for ::1 at 2016-07-17 02:21:37 +0900
+Processing by ContactController#send as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"SABSWar5vGWxZtH7ASbwzXvIMcblH1tTa5L9V4z8PfKa9YzLzDorRilM3Spn5a6JuYMpp1BTamDqbHHSRhG/SQ==", "email"=>"taiyou88@naver.com", "submit"=>""}
+  [1m[35mContact Load (0.1ms)[0m  SELECT  "contacts".* FROM "contacts" WHERE "contacts"."email" = $1 LIMIT 1  [["email", "taiyou88@naver.com"]]
+Redirected to http://localhost:3000landing/complete
+Completed 302 Found in 1ms (ActiveRecord: 0.1ms)
+
+
+Started POST "/contact" for ::1 at 2016-07-17 02:21:37 +0900
+Processing by ContactController#send as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"SABSWar5vGWxZtH7ASbwzXvIMcblH1tTa5L9V4z8PfKa9YzLzDorRilM3Spn5a6JuYMpp1BTamDqbHHSRhG/SQ==", "email"=>"taiyou88@naver.com", "submit"=>""}
+  [1m[36mContact Load (0.1ms)[0m  [1mSELECT  "contacts".* FROM "contacts" WHERE "contacts"."email" = $1 LIMIT 1[0m  [["email", "taiyou88@naver.com"]]
+Redirected to http://localhost:3000landing/complete
+Completed 302 Found in 1ms (ActiveRecord: 0.1ms)
+
+
+Started POST "/contact" for ::1 at 2016-07-17 02:21:37 +0900
+Processing by ContactController#send as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"SABSWar5vGWxZtH7ASbwzXvIMcblH1tTa5L9V4z8PfKa9YzLzDorRilM3Spn5a6JuYMpp1BTamDqbHHSRhG/SQ==", "email"=>"taiyou88@naver.com", "submit"=>""}
+  [1m[35mContact Load (0.1ms)[0m  SELECT  "contacts".* FROM "contacts" WHERE "contacts"."email" = $1 LIMIT 1  [["email", "taiyou88@naver.com"]]
+Redirected to http://localhost:3000landing/complete
+Completed 302 Found in 1ms (ActiveRecord: 0.1ms)
+
+
+Started POST "/contact" for ::1 at 2016-07-17 02:21:37 +0900
+Processing by ContactController#send as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"SABSWar5vGWxZtH7ASbwzXvIMcblH1tTa5L9V4z8PfKa9YzLzDorRilM3Spn5a6JuYMpp1BTamDqbHHSRhG/SQ==", "email"=>"taiyou88@naver.com", "submit"=>""}
+  [1m[36mContact Load (0.1ms)[0m  [1mSELECT  "contacts".* FROM "contacts" WHERE "contacts"."email" = $1 LIMIT 1[0m  [["email", "taiyou88@naver.com"]]
+Redirected to http://localhost:3000landing/complete
+Completed 302 Found in 1ms (ActiveRecord: 0.1ms)
+
+
+Started POST "/contact" for ::1 at 2016-07-17 02:21:37 +0900
+Processing by ContactController#send as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"SABSWar5vGWxZtH7ASbwzXvIMcblH1tTa5L9V4z8PfKa9YzLzDorRilM3Spn5a6JuYMpp1BTamDqbHHSRhG/SQ==", "email"=>"taiyou88@naver.com", "submit"=>""}
+  [1m[35mContact Load (0.1ms)[0m  SELECT  "contacts".* FROM "contacts" WHERE "contacts"."email" = $1 LIMIT 1  [["email", "taiyou88@naver.com"]]
+Redirected to http://localhost:3000landing/complete
+Completed 302 Found in 1ms (ActiveRecord: 0.1ms)
+
+
+Started POST "/contact" for ::1 at 2016-07-17 02:21:37 +0900
+Processing by ContactController#send as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"SABSWar5vGWxZtH7ASbwzXvIMcblH1tTa5L9V4z8PfKa9YzLzDorRilM3Spn5a6JuYMpp1BTamDqbHHSRhG/SQ==", "email"=>"taiyou88@naver.com", "submit"=>""}
+  [1m[36mContact Load (0.2ms)[0m  [1mSELECT  "contacts".* FROM "contacts" WHERE "contacts"."email" = $1 LIMIT 1[0m  [["email", "taiyou88@naver.com"]]
+Redirected to http://localhost:3000landing/complete
+Completed 302 Found in 1ms (ActiveRecord: 0.2ms)
+
+
+Started POST "/contact" for ::1 at 2016-07-17 02:21:37 +0900
+Processing by ContactController#send as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"SABSWar5vGWxZtH7ASbwzXvIMcblH1tTa5L9V4z8PfKa9YzLzDorRilM3Spn5a6JuYMpp1BTamDqbHHSRhG/SQ==", "email"=>"taiyou88@naver.com", "submit"=>""}
+  [1m[35mContact Load (0.1ms)[0m  SELECT  "contacts".* FROM "contacts" WHERE "contacts"."email" = $1 LIMIT 1  [["email", "taiyou88@naver.com"]]
+Redirected to http://localhost:3000landing/complete
+Completed 302 Found in 1ms (ActiveRecord: 0.1ms)
+
+
+Started POST "/contact" for ::1 at 2016-07-17 02:22:11 +0900
+Processing by ContactController#send as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"SABSWar5vGWxZtH7ASbwzXvIMcblH1tTa5L9V4z8PfKa9YzLzDorRilM3Spn5a6JuYMpp1BTamDqbHHSRhG/SQ==", "email"=>"taiyou88@naver.com", "submit"=>""}
+  [1m[36mContact Load (0.1ms)[0m  [1mSELECT  "contacts".* FROM "contacts" WHERE "contacts"."email" = $1 LIMIT 1[0m  [["email", "taiyou88@naver.com"]]
+Redirected to http://localhost:3000/landing/complete
+Completed 302 Found in 5ms (ActiveRecord: 1.4ms)
+
+
+Started GET "/landing/complete" for ::1 at 2016-07-17 02:22:11 +0900
+Processing by HighVoltage::PagesController#show as HTML
+  Parameters: {"id"=>"complete"}
+  Rendered landing/complete/_body.html.erb (1.9ms)
+  Rendered pages/complete.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 50ms (Views: 48.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-07-17 02:22:14 +0900
+Processing by PagesController#show as HTML
+  Parameters: {"id"=>"home"}
+  Rendered landing/home/_head.html.erb (1.6ms)
+  Rendered landing/home/_main.html.erb (1.8ms)
+  Rendered landing/home/_screenshot_desc.html.erb (1.2ms)
+  Rendered landing/home/_adver_desc.html.erb (1.0ms)
+  Rendered landing/home/_benefit_desc.html.erb (1.1ms)
+  Rendered landing/home/_realtime_desc.html.erb (1.0ms)
+  Rendered landing/home/_contact.html.erb (0.9ms)
+  Rendered landing/home/_footer.html.erb (0.7ms)
+  Rendered shared/_body.html.erb (32.0ms)
+  Rendered pages/home.html.erb within layouts/application (34.7ms)
+Completed 200 OK in 86ms (Views: 84.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/2.png" for ::1 at 2016-07-17 02:22:14 +0900
+
+
+Started GET "/" for ::1 at 2016-07-17 02:22:19 +0900
+Processing by PagesController#show as HTML
+  Parameters: {"id"=>"home"}
+  Rendered landing/home/_head.html.erb (1.6ms)
+  Rendered landing/home/_main.html.erb (1.0ms)
+  Rendered landing/home/_screenshot_desc.html.erb (0.7ms)
+  Rendered landing/home/_adver_desc.html.erb (0.6ms)
+  Rendered landing/home/_benefit_desc.html.erb (0.6ms)
+  Rendered landing/home/_realtime_desc.html.erb (0.6ms)
+  Rendered landing/home/_contact.html.erb (0.3ms)
+  Rendered landing/home/_footer.html.erb (0.3ms)
+  Rendered shared/_body.html.erb (24.7ms)
+  Rendered pages/home.html.erb within layouts/application (27.1ms)
+Completed 200 OK in 69ms (Views: 67.6ms | ActiveRecord: 0.0ms)
