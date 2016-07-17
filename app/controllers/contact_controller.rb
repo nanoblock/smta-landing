@@ -3,15 +3,8 @@ class ContactController < ApplicationController
 	def send(arg)
 		contact
 		# SendMailer.contact(params[:email]).deliver_now
-			# puts "COMECOMECOME"
-			# flash[:success] = "Thanks you!!!!!!!! I got your mail"
-		begin
-			return if request.referer.nil? 
-			redirect_to '/landing/complete'
-		rescue ActionController::RedirectBackError
-			redirect_to root_path, notice: "SUCCESS!"
-		end
 
+		redirect_to '/landing/complete'
 	end
 
 	def contact
